@@ -35,7 +35,8 @@ Body | (empty)
 Status : 200 Ok
 Body   :
 ```json
-    {    "m2m:cin": {
+    {    
+    "m2m:cin": {
         "rn": "cin_76678820",
         "ty": 4,
         "ri": "/in-cse/cin-76678820",
