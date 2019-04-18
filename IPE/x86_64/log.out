@@ -1,0 +1,1484 @@
+[2019-04-18 13:29:07,169 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2019-04-18 13:29:07,170 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2019-04-18 13:29:13,158 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2019-04-18 13:29:13,158 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering JSON Mapper Service..
+[2019-04-18 13:29:16,320 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+JSON Mapper service registered.
+[2019-04-18 13:29:16,591 INFO] - org.eclipse.om2m.binding.coap.Activator 
+Register CoAP RestClientService..
+[2019-04-18 13:29:16,594 INFO] - org.eclipse.om2m.binding.coap.Activator 
+Starting CoAP server
+[2019-04-18 13:29:16,621 INFO] - org.eclipse.om2m.binding.coap.Activator 
+CseService opened
+[2019-04-18 13:29:16,622 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2019-04-18 13:29:16,629 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2019-04-18 13:29:16,730 INFO] - org.eclipse.om2m.ipe.smart_twin.Activator 
+Starting SMART_TWIN IPE
+[2019-04-18 13:29:16,892 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2019-04-18 13:29:16,894 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2019-04-18 13:29:16,895 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/xml
+[2019-04-18 13:29:16,895 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2019-04-18 13:29:16,895 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/json
+[2019-04-18 13:29:16,895 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2019-04-18 13:29:16,896 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: coap
+[2019-04-18 13:29:16,896 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: http
+[2019-04-18 13:29:16,897 INFO] - org.eclipse.om2m.core.Activator 
+IPE service discovered: DigitalTwin
+[2019-04-18 13:29:16,899 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2019-04-18 13:29:16,900 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2019-04-18 13:29:16,971 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator 
+HttpService discovered
+[2019-04-18 13:29:16,971 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator 
+Register /webpage http context
+[2019-04-18 13:29:18,788 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+DataBase initialized.
+[2019-04-18 13:29:18,804 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2019-04-18 13:29:18,804 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2019-04-18 13:29:18,805 INFO] - org.eclipse.om2m.core.thread.CoreExecutor 
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[2019-04-18 13:29:18,807 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Initializating the cseBase
+[2019-04-18 13:29:18,815 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Create AccessControlPolicy resource
+[2019-04-18 13:29:18,845 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Create CSEBase resource
+[2019-04-18 13:29:18,860 INFO] - org.eclipse.om2m.core.Activator 
+Registering CseService...
+[2019-04-18 13:29:18,866 INFO] - org.eclipse.om2m.binding.http.Activator 
+CseService discovered
+[2019-04-18 13:29:18,866 INFO] - org.eclipse.om2m.binding.coap.Activator 
+CSE Service discovered
+[2019-04-18 13:29:18,870 INFO] - org.eclipse.om2m.core.Activator 
+CSE Started
+[2019-04-18 13:29:32,338 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2019-04-18 13:29:32,339 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2019-04-18 13:29:40,622 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2019-04-18 13:29:40,622 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering JSON Mapper Service..
+[2019-04-18 13:29:45,296 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+JSON Mapper service registered.
+[2019-04-18 13:29:45,637 INFO] - org.eclipse.om2m.binding.coap.Activator 
+Register CoAP RestClientService..
+[2019-04-18 13:29:45,638 INFO] - org.eclipse.om2m.binding.coap.Activator 
+Starting CoAP server
+[2019-04-18 13:29:45,669 INFO] - org.eclipse.om2m.binding.coap.Activator 
+CseService opened
+[2019-04-18 13:29:45,671 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2019-04-18 13:29:45,678 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2019-04-18 13:29:45,823 INFO] - org.eclipse.om2m.ipe.smart_twin.Activator 
+Starting SMART_TWIN IPE
+[2019-04-18 13:29:45,967 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2019-04-18 13:29:45,971 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2019-04-18 13:29:45,971 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/xml
+[2019-04-18 13:29:45,971 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2019-04-18 13:29:45,972 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/json
+[2019-04-18 13:29:45,972 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2019-04-18 13:29:45,973 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: coap
+[2019-04-18 13:29:45,973 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: http
+[2019-04-18 13:29:45,974 INFO] - org.eclipse.om2m.core.Activator 
+IPE service discovered: DigitalTwin
+[2019-04-18 13:29:45,977 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2019-04-18 13:29:45,977 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2019-04-18 13:29:46,044 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator 
+HttpService discovered
+[2019-04-18 13:29:46,044 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator 
+Register /webpage http context
+[2019-04-18 13:29:48,245 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+DataBase initialized.
+[2019-04-18 13:29:48,264 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2019-04-18 13:29:48,264 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2019-04-18 13:29:48,265 INFO] - org.eclipse.om2m.core.thread.CoreExecutor 
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[2019-04-18 13:29:48,267 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Initializating the cseBase
+[2019-04-18 13:29:48,290 INFO] - org.eclipse.om2m.core.CSEInitializer 
+cseBase already initialized
+[2019-04-18 13:29:48,290 INFO] - org.eclipse.om2m.core.Activator 
+Registering CseService...
+[2019-04-18 13:29:48,297 INFO] - org.eclipse.om2m.binding.http.Activator 
+CseService discovered
+[2019-04-18 13:29:48,302 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/DigitalTwin,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,304 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin
+[2019-04-18 13:29:48,308 ERROR] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Resource not found
+org.eclipse.om2m.commons.exceptions.ResourceNotFoundException: Resource not found
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:210)
+	at org.eclipse.om2m.ipe.smart_twin.util.RequestSender.getRequest(RequestSender.java:93)
+	at org.eclipse.om2m.ipe.smart_twin.model.Building.createAE(Building.java:31)
+	at org.eclipse.om2m.ipe.smart_twin.model.Building.<init>(Building.java:23)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.loadConfiguration(Monitor.java:48)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.start(Monitor.java:105)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:48)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:914)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:862)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:801)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:225)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:464)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:482)
+	at org.eclipse.om2m.core.Activator$2$1.run(Activator.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-04-18 13:29:48,308 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=4004
+ to=admin:admin
+ from=/in-cse
+ contentType=text/plain,
+ content (Only first 1000 caracters)=
+ Resource not found
+]
+[2019-04-18 13:29:48,308 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse,
+ from=admin:admin,
+ resourceType=2,
+ content=org.eclipse.om2m.commons.resource.AE@2d925fb4,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,309 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse
+[2019-04-18 13:29:48,310 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [AEController]
+[2019-04-18 13:29:48,390 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,415 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/CAE311406559,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:ae" : {
+      "rn" : "DigitalTwin",
+      "ty" : 2,
+      "ri" : "/in-cse/CAE311406559",
+      "pi" : "/in-cse",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "acpi" : [ "/in-cse/acp-154850126" ],
+      "et" : "20200418T132948",
+      "api" : "DigitalTwin",
+      "aei" : "CAE311406559",
+      "poa" : [ "DigitalTwin" ],
+      "rr" : true
+   }
+}
+]
+[2019-04-18 13:29:48,416 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/DigitalTwin/203,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,416 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/203
+[2019-04-18 13:29:48,418 ERROR] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Resource not found
+org.eclipse.om2m.commons.exceptions.ResourceNotFoundException: Resource not found
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:210)
+	at org.eclipse.om2m.ipe.smart_twin.util.RequestSender.getRequest(RequestSender.java:93)
+	at org.eclipse.om2m.ipe.smart_twin.model.Room.createCNT(Room.java:31)
+	at org.eclipse.om2m.ipe.smart_twin.model.Room.<init>(Room.java:27)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.loadConfiguration(Monitor.java:57)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.start(Monitor.java:105)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:48)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:914)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:862)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:801)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:225)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:464)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:482)
+	at org.eclipse.om2m.core.Activator$2$1.run(Activator.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-04-18 13:29:48,418 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=4004
+ to=admin:admin
+ from=/in-cse
+ contentType=text/plain,
+ content (Only first 1000 caracters)=
+ Resource not found
+]
+[2019-04-18 13:29:48,418 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin,
+ from=admin:admin,
+ resourceType=3,
+ content=org.eclipse.om2m.commons.resource.Container@3c9939a4,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,419 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin
+[2019-04-18 13:29:48,420 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2019-04-18 13:29:48,441 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,442 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cnt-169394527,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "203",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-169394527",
+      "pi" : "/in-cse/CAE311406559",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "acpi" : [ "/in-cse/acp-154850126" ],
+      "et" : "20200418T132948",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ol" : "/in-cse/in-name/DigitalTwin/203/ol",
+      "la" : "/in-cse/in-name/DigitalTwin/203/la"
+   }
+}
+]
+[2019-04-18 13:29:48,442 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/DigitalTwin/203/window,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,444 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/203/window
+[2019-04-18 13:29:48,445 ERROR] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Resource not found
+org.eclipse.om2m.commons.exceptions.ResourceNotFoundException: Resource not found
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:210)
+	at org.eclipse.om2m.ipe.smart_twin.util.RequestSender.getRequest(RequestSender.java:93)
+	at org.eclipse.om2m.ipe.smart_twin.model.Device.createCNT(Device.java:99)
+	at org.eclipse.om2m.ipe.smart_twin.model.Device.<init>(Device.java:36)
+	at org.eclipse.om2m.ipe.smart_twin.model.Window.<init>(Window.java:15)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.loadConfiguration(Monitor.java:69)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.start(Monitor.java:105)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:48)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:914)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:862)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:801)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:225)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:464)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:482)
+	at org.eclipse.om2m.core.Activator$2$1.run(Activator.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-04-18 13:29:48,446 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=4004
+ to=admin:admin
+ from=/in-cse
+ contentType=text/plain,
+ content (Only first 1000 caracters)=
+ Resource not found
+]
+[2019-04-18 13:29:48,446 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/203,
+ from=admin:admin,
+ resourceType=3,
+ content=org.eclipse.om2m.commons.resource.Container@18b44f0d,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,446 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/203
+[2019-04-18 13:29:48,447 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2019-04-18 13:29:48,464 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,465 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cnt-98842656,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "window",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-98842656",
+      "pi" : "/in-cse/cnt-169394527",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "acpi" : [ "/in-cse/acp-154850126" ],
+      "et" : "20200418T132948",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ol" : "/in-cse/in-name/DigitalTwin/203/window/ol",
+      "la" : "/in-cse/in-name/DigitalTwin/203/window/la"
+   }
+}
+]
+[2019-04-18 13:29:48,465 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/203/window,
+ from=admin:admin,
+ resourceType=4,
+ content=org.eclipse.om2m.commons.resource.ContentInstance@448af83d,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,465 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/203/window
+[2019-04-18 13:29:48,467 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2019-04-18 13:29:48,486 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,487 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cin-76678820,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cin" : {
+      "rn" : "cin_76678820",
+      "ty" : 4,
+      "ri" : "/in-cse/cin-76678820",
+      "pi" : "/in-cse/cnt-98842656",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "st" : 0,
+      "cnf" : "text/plain:0",
+      "cs" : 50,
+      "con" : "{\"room\":\"203\", \"device\":\"window\", \"state\":\"CLOSE\"}"
+   }
+}
+]
+[2019-04-18 13:29:48,487 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/DigitalTwin/203/door,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,487 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/203/door
+[2019-04-18 13:29:48,488 ERROR] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Resource not found
+org.eclipse.om2m.commons.exceptions.ResourceNotFoundException: Resource not found
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:210)
+	at org.eclipse.om2m.ipe.smart_twin.util.RequestSender.getRequest(RequestSender.java:93)
+	at org.eclipse.om2m.ipe.smart_twin.model.Device.createCNT(Device.java:99)
+	at org.eclipse.om2m.ipe.smart_twin.model.Device.<init>(Device.java:36)
+	at org.eclipse.om2m.ipe.smart_twin.model.Door.<init>(Door.java:16)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.loadConfiguration(Monitor.java:77)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.start(Monitor.java:105)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:48)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:914)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:862)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:801)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:225)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:464)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:482)
+	at org.eclipse.om2m.core.Activator$2$1.run(Activator.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-04-18 13:29:48,489 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=4004
+ to=admin:admin
+ from=/in-cse
+ contentType=text/plain,
+ content (Only first 1000 caracters)=
+ Resource not found
+]
+[2019-04-18 13:29:48,489 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/203,
+ from=admin:admin,
+ resourceType=3,
+ content=org.eclipse.om2m.commons.resource.Container@ee0713f,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,490 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/203
+[2019-04-18 13:29:48,490 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2019-04-18 13:29:48,518 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,519 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cnt-187563552,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "door",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-187563552",
+      "pi" : "/in-cse/cnt-169394527",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "acpi" : [ "/in-cse/acp-154850126" ],
+      "et" : "20200418T132948",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ol" : "/in-cse/in-name/DigitalTwin/203/door/ol",
+      "la" : "/in-cse/in-name/DigitalTwin/203/door/la"
+   }
+}
+]
+[2019-04-18 13:29:48,519 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/203/door,
+ from=admin:admin,
+ resourceType=4,
+ content=org.eclipse.om2m.commons.resource.ContentInstance@77f976d2,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,519 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/203/door
+[2019-04-18 13:29:48,520 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2019-04-18 13:29:48,531 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,532 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cin-822526347,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cin" : {
+      "rn" : "cin_822526347",
+      "ty" : 4,
+      "ri" : "/in-cse/cin-822526347",
+      "pi" : "/in-cse/cnt-187563552",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "st" : 0,
+      "cnf" : "text/plain:0",
+      "cs" : 48,
+      "con" : "{\"room\":\"203\", \"device\":\"door\", \"state\":\"CLOSE\"}"
+   }
+}
+]
+[2019-04-18 13:29:48,532 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/DigitalTwin/203/light,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,532 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/203/light
+[2019-04-18 13:29:48,533 ERROR] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Resource not found
+org.eclipse.om2m.commons.exceptions.ResourceNotFoundException: Resource not found
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:210)
+	at org.eclipse.om2m.ipe.smart_twin.util.RequestSender.getRequest(RequestSender.java:93)
+	at org.eclipse.om2m.ipe.smart_twin.model.Device.createCNT(Device.java:99)
+	at org.eclipse.om2m.ipe.smart_twin.model.Device.<init>(Device.java:36)
+	at org.eclipse.om2m.ipe.smart_twin.model.Light.<init>(Light.java:17)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.loadConfiguration(Monitor.java:73)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.start(Monitor.java:105)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:48)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:914)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:862)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:801)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:225)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:464)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:482)
+	at org.eclipse.om2m.core.Activator$2$1.run(Activator.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-04-18 13:29:48,533 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=4004
+ to=admin:admin
+ from=/in-cse
+ contentType=text/plain,
+ content (Only first 1000 caracters)=
+ Resource not found
+]
+[2019-04-18 13:29:48,533 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/203,
+ from=admin:admin,
+ resourceType=3,
+ content=org.eclipse.om2m.commons.resource.Container@706f0082,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,534 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/203
+[2019-04-18 13:29:48,534 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2019-04-18 13:29:48,554 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,555 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cnt-591405752,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "light",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-591405752",
+      "pi" : "/in-cse/cnt-169394527",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "acpi" : [ "/in-cse/acp-154850126" ],
+      "et" : "20200418T132948",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ol" : "/in-cse/in-name/DigitalTwin/203/light/ol",
+      "la" : "/in-cse/in-name/DigitalTwin/203/light/la"
+   }
+}
+]
+[2019-04-18 13:29:48,555 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/203/light,
+ from=admin:admin,
+ resourceType=4,
+ content=org.eclipse.om2m.commons.resource.ContentInstance@1b202d4a,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,555 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/203/light
+[2019-04-18 13:29:48,557 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2019-04-18 13:29:48,570 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,571 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cin-508144718,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cin" : {
+      "rn" : "cin_508144718",
+      "ty" : 4,
+      "ri" : "/in-cse/cin-508144718",
+      "pi" : "/in-cse/cnt-591405752",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "st" : 0,
+      "cnf" : "text/plain:0",
+      "cs" : 47,
+      "con" : "{\"room\":\"203\", \"device\":\"light\", \"state\":\"0.0\"}"
+   }
+}
+]
+[2019-04-18 13:29:48,571 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/DigitalTwin/204,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,572 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/204
+[2019-04-18 13:29:48,572 ERROR] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Resource not found
+org.eclipse.om2m.commons.exceptions.ResourceNotFoundException: Resource not found
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:210)
+	at org.eclipse.om2m.ipe.smart_twin.util.RequestSender.getRequest(RequestSender.java:93)
+	at org.eclipse.om2m.ipe.smart_twin.model.Room.createCNT(Room.java:31)
+	at org.eclipse.om2m.ipe.smart_twin.model.Room.<init>(Room.java:27)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.loadConfiguration(Monitor.java:57)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.start(Monitor.java:105)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:48)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:914)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:862)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:801)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:225)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:464)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:482)
+	at org.eclipse.om2m.core.Activator$2$1.run(Activator.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-04-18 13:29:48,572 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=4004
+ to=admin:admin
+ from=/in-cse
+ contentType=text/plain,
+ content (Only first 1000 caracters)=
+ Resource not found
+]
+[2019-04-18 13:29:48,574 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin,
+ from=admin:admin,
+ resourceType=3,
+ content=org.eclipse.om2m.commons.resource.Container@5a9f5708,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,575 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin
+[2019-04-18 13:29:48,576 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2019-04-18 13:29:48,587 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,588 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cnt-381963444,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "204",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-381963444",
+      "pi" : "/in-cse/CAE311406559",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "acpi" : [ "/in-cse/acp-154850126" ],
+      "et" : "20200418T132948",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ol" : "/in-cse/in-name/DigitalTwin/204/ol",
+      "la" : "/in-cse/in-name/DigitalTwin/204/la"
+   }
+}
+]
+[2019-04-18 13:29:48,588 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/DigitalTwin/204/window,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,588 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/204/window
+[2019-04-18 13:29:48,589 ERROR] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Resource not found
+org.eclipse.om2m.commons.exceptions.ResourceNotFoundException: Resource not found
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:210)
+	at org.eclipse.om2m.ipe.smart_twin.util.RequestSender.getRequest(RequestSender.java:93)
+	at org.eclipse.om2m.ipe.smart_twin.model.Device.createCNT(Device.java:99)
+	at org.eclipse.om2m.ipe.smart_twin.model.Device.<init>(Device.java:36)
+	at org.eclipse.om2m.ipe.smart_twin.model.Window.<init>(Window.java:15)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.loadConfiguration(Monitor.java:69)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.start(Monitor.java:105)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:48)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:914)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:862)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:801)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:225)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:464)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:482)
+	at org.eclipse.om2m.core.Activator$2$1.run(Activator.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-04-18 13:29:48,589 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=4004
+ to=admin:admin
+ from=/in-cse
+ contentType=text/plain,
+ content (Only first 1000 caracters)=
+ Resource not found
+]
+[2019-04-18 13:29:48,589 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/204,
+ from=admin:admin,
+ resourceType=3,
+ content=org.eclipse.om2m.commons.resource.Container@7c8da3,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,589 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/204
+[2019-04-18 13:29:48,590 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2019-04-18 13:29:48,599 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,599 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cnt-423211829,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "window",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-423211829",
+      "pi" : "/in-cse/cnt-381963444",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "acpi" : [ "/in-cse/acp-154850126" ],
+      "et" : "20200418T132948",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ol" : "/in-cse/in-name/DigitalTwin/204/window/ol",
+      "la" : "/in-cse/in-name/DigitalTwin/204/window/la"
+   }
+}
+]
+[2019-04-18 13:29:48,599 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/204/window,
+ from=admin:admin,
+ resourceType=4,
+ content=org.eclipse.om2m.commons.resource.ContentInstance@5eb628ee,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,600 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/204/window
+[2019-04-18 13:29:48,601 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2019-04-18 13:29:48,619 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,620 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cin-356102284,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cin" : {
+      "rn" : "cin_356102284",
+      "ty" : 4,
+      "ri" : "/in-cse/cin-356102284",
+      "pi" : "/in-cse/cnt-423211829",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "st" : 0,
+      "cnf" : "text/plain:0",
+      "cs" : 50,
+      "con" : "{\"room\":\"204\", \"device\":\"window\", \"state\":\"CLOSE\"}"
+   }
+}
+]
+[2019-04-18 13:29:48,620 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/DigitalTwin/204/door,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,620 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/204/door
+[2019-04-18 13:29:48,620 ERROR] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Resource not found
+org.eclipse.om2m.commons.exceptions.ResourceNotFoundException: Resource not found
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:210)
+	at org.eclipse.om2m.ipe.smart_twin.util.RequestSender.getRequest(RequestSender.java:93)
+	at org.eclipse.om2m.ipe.smart_twin.model.Device.createCNT(Device.java:99)
+	at org.eclipse.om2m.ipe.smart_twin.model.Device.<init>(Device.java:36)
+	at org.eclipse.om2m.ipe.smart_twin.model.Door.<init>(Door.java:16)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.loadConfiguration(Monitor.java:77)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.start(Monitor.java:105)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:48)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:914)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:862)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:801)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:225)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:464)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:482)
+	at org.eclipse.om2m.core.Activator$2$1.run(Activator.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-04-18 13:29:48,621 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=4004
+ to=admin:admin
+ from=/in-cse
+ contentType=text/plain,
+ content (Only first 1000 caracters)=
+ Resource not found
+]
+[2019-04-18 13:29:48,621 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/204,
+ from=admin:admin,
+ resourceType=3,
+ content=org.eclipse.om2m.commons.resource.Container@4d73eb24,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,621 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/204
+[2019-04-18 13:29:48,621 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2019-04-18 13:29:48,649 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,650 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cnt-123353556,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "door",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-123353556",
+      "pi" : "/in-cse/cnt-381963444",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "acpi" : [ "/in-cse/acp-154850126" ],
+      "et" : "20200418T132948",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ol" : "/in-cse/in-name/DigitalTwin/204/door/ol",
+      "la" : "/in-cse/in-name/DigitalTwin/204/door/la"
+   }
+}
+]
+[2019-04-18 13:29:48,650 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/204/door,
+ from=admin:admin,
+ resourceType=4,
+ content=org.eclipse.om2m.commons.resource.ContentInstance@40edae54,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,651 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/204/door
+[2019-04-18 13:29:48,651 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2019-04-18 13:29:48,661 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,666 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cin-224601901,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cin" : {
+      "rn" : "cin_224601901",
+      "ty" : 4,
+      "ri" : "/in-cse/cin-224601901",
+      "pi" : "/in-cse/cnt-123353556",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "st" : 0,
+      "cnf" : "text/plain:0",
+      "cs" : 48,
+      "con" : "{\"room\":\"204\", \"device\":\"door\", \"state\":\"CLOSE\"}"
+   }
+}
+]
+[2019-04-18 13:29:48,666 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/DigitalTwin/204/light,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,666 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/204/light
+[2019-04-18 13:29:48,668 ERROR] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Resource not found
+org.eclipse.om2m.commons.exceptions.ResourceNotFoundException: Resource not found
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:210)
+	at org.eclipse.om2m.ipe.smart_twin.util.RequestSender.getRequest(RequestSender.java:93)
+	at org.eclipse.om2m.ipe.smart_twin.model.Device.createCNT(Device.java:99)
+	at org.eclipse.om2m.ipe.smart_twin.model.Device.<init>(Device.java:36)
+	at org.eclipse.om2m.ipe.smart_twin.model.Light.<init>(Light.java:17)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.loadConfiguration(Monitor.java:73)
+	at org.eclipse.om2m.ipe.smart_twin.Monitor.start(Monitor.java:105)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:48)
+	at org.eclipse.om2m.ipe.smart_twin.Activator$1.addingService(Activator.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:914)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:862)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:801)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:225)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:464)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:482)
+	at org.eclipse.om2m.core.Activator$2$1.run(Activator.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-04-18 13:29:48,669 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=4004
+ to=admin:admin
+ from=/in-cse
+ contentType=text/plain,
+ content (Only first 1000 caracters)=
+ Resource not found
+]
+[2019-04-18 13:29:48,669 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/204,
+ from=admin:admin,
+ resourceType=3,
+ content=org.eclipse.om2m.commons.resource.Container@51f7f469,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,670 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/204
+[2019-04-18 13:29:48,670 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2019-04-18 13:29:48,697 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,697 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cnt-841810628,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "light",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-841810628",
+      "pi" : "/in-cse/cnt-381963444",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "acpi" : [ "/in-cse/acp-154850126" ],
+      "et" : "20200418T132948",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ol" : "/in-cse/in-name/DigitalTwin/204/light/ol",
+      "la" : "/in-cse/in-name/DigitalTwin/204/light/la"
+   }
+}
+]
+[2019-04-18 13:29:48,698 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/204/light,
+ from=admin:admin,
+ resourceType=4,
+ content=org.eclipse.om2m.commons.resource.ContentInstance@2beb1999,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:29:48,698 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/204/light
+[2019-04-18 13:29:48,698 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2019-04-18 13:29:48,707 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:29:48,708 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cin-996849467,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cin" : {
+      "rn" : "cin_996849467",
+      "ty" : 4,
+      "ri" : "/in-cse/cin-996849467",
+      "pi" : "/in-cse/cnt-841810628",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "st" : 0,
+      "cnf" : "text/plain:0",
+      "cs" : 47,
+      "con" : "{\"room\":\"204\", \"device\":\"light\", \"state\":\"0.0\"}"
+   }
+}
+]
+[2019-04-18 13:29:48,708 INFO] - org.eclipse.om2m.binding.coap.Activator 
+CSE Service discovered
+[2019-04-18 13:29:48,709 INFO] - org.eclipse.om2m.core.Activator 
+CSE Started
+[2019-04-18 13:30:53,257 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2019-04-18 13:30:53,259 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/DigitalTwin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@503d8602,
+ , 
+,tokens=null]
+[2019-04-18 13:30:53,260 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+parseAuthorizationHeader(authorizationHeader:null)
+[2019-04-18 13:30:53,260 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2019-04-18 13:30:53,260 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2019-04-18 13:30:53,260 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: */*
+[2019-04-18 13:30:53,260 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=5,
+ to=/in-cse/in-name/DigitalTwin,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@503d8602,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={op=[GET], device=[window], room=[203]}, 
+,tokens=null]
+[2019-04-18 13:30:53,260 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin
+[2019-04-18 13:30:53,263 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+Sending notification to IPE: DigitalTwin
+[2019-04-18 13:30:53,264 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/DigitalTwin/203/window/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:30:53,264 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/203/window/la
+[2019-04-18 13:30:53,265 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2019-04-18 13:30:53,278 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:30:53,284 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cin" : {
+      "rn" : "cin_76678820",
+      "ty" : 4,
+      "ri" : "/in-cse/cin-76678820",
+      "pi" : "/in-cse/cnt-98842656",
+      "ct" : "20190418T132948",
+      "lt" : "20190418T132948",
+      "st" : 0,
+      "cnf" : "text/plain:0",
+      "cs" : 50,
+      "con" : "{\"room\":\"203\", \"device\":\"window\", \"state\":\"CLOSE\"}"
+   }
+}
+]
+[2019-04-18 13:30:53,285 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2019-04-18 13:59:29,797 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2019-04-18 13:59:29,797 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/DigitalTwin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@31fc0435,
+ , 
+,tokens=null]
+[2019-04-18 13:59:29,798 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+parseAuthorizationHeader(authorizationHeader:null)
+[2019-04-18 13:59:29,798 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2019-04-18 13:59:29,798 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2019-04-18 13:59:29,798 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: */*
+[2019-04-18 13:59:29,798 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=5,
+ to=/in-cse/in-name/DigitalTwin,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@31fc0435,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={op=[SET_CLOSE], device=[window], room=[203]}, 
+,tokens=null]
+[2019-04-18 13:59:29,798 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin
+[2019-04-18 13:59:29,801 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+Sending notification to IPE: DigitalTwin
+[2019-04-18 13:59:29,806 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/203/window,
+ from=admin:admin,
+ resourceType=4,
+ content=org.eclipse.om2m.commons.resource.ContentInstance@50a3f39b,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 13:59:29,806 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/203/window
+[2019-04-18 13:59:29,806 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2019-04-18 13:59:29,825 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 13:59:29,826 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cin-591265056,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cin" : {
+      "rn" : "cin_591265056",
+      "ty" : 4,
+      "ri" : "/in-cse/cin-591265056",
+      "pi" : "/in-cse/cnt-98842656",
+      "ct" : "20190418T135929",
+      "lt" : "20190418T135929",
+      "st" : 0,
+      "cnf" : "text/plain:0",
+      "cs" : 50,
+      "con" : "{\"room\":\"203\", \"device\":\"window\", \"state\":\"CLOSE\"}"
+   }
+}
+]
+[2019-04-18 13:59:29,827 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2019-04-18 14:01:34,224 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2019-04-18 14:01:34,224 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/DigitalTwin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@6875b353,
+ , 
+,tokens=null]
+[2019-04-18 14:01:34,224 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+parseAuthorizationHeader(authorizationHeader:null)
+[2019-04-18 14:01:34,224 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2019-04-18 14:01:34,224 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2019-04-18 14:01:34,224 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: */*
+[2019-04-18 14:01:34,224 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=5,
+ to=/in-cse/in-name/DigitalTwin,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@6875b353,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={op=[SET_LIGHT], device=[light], room=[203]}, 
+,tokens=null]
+[2019-04-18 14:01:34,225 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin
+[2019-04-18 14:01:34,233 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+Sending notification to IPE: DigitalTwin
+[2019-04-18 14:01:34,245 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2019-04-18 14:01:45,981 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2019-04-18 14:01:45,982 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/DigitalTwin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@6c8f3b07,
+ , 
+,tokens=null]
+[2019-04-18 14:01:45,982 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+parseAuthorizationHeader(authorizationHeader:null)
+[2019-04-18 14:01:45,982 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2019-04-18 14:01:45,982 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2019-04-18 14:01:45,982 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: */*
+[2019-04-18 14:01:45,982 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=5,
+ to=/in-cse/in-name/DigitalTwin,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@6c8f3b07,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={op=[SET_LIGHT], device=[light], value=[50.0], room=[203]}, 
+,tokens=null]
+[2019-04-18 14:01:45,982 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin
+[2019-04-18 14:01:45,985 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+Sending notification to IPE: DigitalTwin
+[2019-04-18 14:01:45,987 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/DigitalTwin/203/light,
+ from=admin:admin,
+ resourceType=4,
+ content=org.eclipse.om2m.commons.resource.ContentInstance@18db3f58,
+ returnContentType=application/json,
+ requestContentType=application/obj,
+ , 
+,tokens=null]
+[2019-04-18 14:01:45,988 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin/203/light
+[2019-04-18 14:01:45,988 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2019-04-18 14:01:46,002 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-18 14:01:46,002 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cin-44510965,
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cin" : {
+      "rn" : "cin_44510965",
+      "ty" : 4,
+      "ri" : "/in-cse/cin-44510965",
+      "pi" : "/in-cse/cnt-591405752",
+      "ct" : "20190418T140145",
+      "lt" : "20190418T140145",
+      "st" : 0,
+      "cnf" : "text/plain:0",
+      "cs" : 48,
+      "con" : "{\"room\":\"203\", \"device\":\"light\", \"state\":\"50.0\"}"
+   }
+}
+]
+[2019-04-18 14:01:46,002 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2019-04-18 14:04:06,747 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2019-04-18 14:04:06,747 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/DigitalTwin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@244842ad,
+ , 
+,tokens=null]
+[2019-04-18 14:04:06,747 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+parseAuthorizationHeader(authorizationHeader:null)
+[2019-04-18 14:04:06,747 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2019-04-18 14:04:06,747 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2019-04-18 14:04:06,747 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: */*
+[2019-04-18 14:04:06,748 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=5,
+ to=/in-cse/in-name/DigitalTwin,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@244842ad,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={op=[SET_LIGHT], device=[light], value=[50.0], room=[207]}, 
+,tokens=null]
+[2019-04-18 14:04:06,748 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/DigitalTwin
+[2019-04-18 14:04:06,751 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+Sending notification to IPE: DigitalTwin
+[2019-04-18 14:04:06,769 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
