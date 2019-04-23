@@ -92,7 +92,7 @@ Body   :
  
 Field | Value
 ------------ | -------------
-URL example| ~/in-cse/in-name/DigitalTwin?op=SET_LIGHT&room=203&device=light&hex=4286f4&intensity=50.0
+URL example| ~/in-cse/in-name/DigitalTwin?op=SET_LIGHT&room=203&device=light&hex=4286f4&intensity=21.2
 op      | SET_CLOSE, SET_OPEN
 ?hex          | HEX code withouth the #
 ?intensity    | Intensity [0...100]
@@ -116,7 +116,7 @@ Body   :
         "st": 0,
         "cnf": "text/plain:0",
         "cs": 48,
-        "con": "{\"room\":\"203\", \"device\":\"light\", \"state\":\"50.0\"}"
+        "con": "{\"room\":\"6.203\", \"device\":\"light\", \"hex\":\"#4286f4\", \"intensity\":\"21.2\"}"
     }
 }
 ```
