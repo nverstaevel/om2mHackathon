@@ -9,7 +9,8 @@ URL | ~/in-cse/in-name/DigitalTwin
 ?op           | GET, SET_OPEN, SET_CLOSE, SET_LIGHT
 ?room         | Room number [0...400].
 ?device       | { window, door, light}
-?value        | New value
+?hex          | HEX code withouth the #
+?intensity    | Intensity [0...100]
 Method        | POST
 Header        | { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body          | (empty)
@@ -91,9 +92,10 @@ Body   :
  
 Field | Value
 ------------ | -------------
-URL example| ~/in-cse/in-name/DigitalTwin?op=SET_LIGHT&room=203&device=light&value=50.0
+URL example| ~/in-cse/in-name/DigitalTwin?op=SET_LIGHT&room=203&device=light&hex=4286f4&intensity=50.0
 op      | SET_CLOSE, SET_OPEN
-value   | Intensity between 0.0 and 100.0
+?hex          | HEX code withouth the #
+?intensity    | Intensity [0...100]
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body | (empty)
