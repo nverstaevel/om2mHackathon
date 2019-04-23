@@ -5,7 +5,7 @@
 
 Field | Value
 ------------ | -------------
-URL | ~/in-cse/in-name/DigitalTwin
+URL | http://localhost:8080/~/in-cse/in-name/DigitalTwin
 ?op           | GET, SET_OPEN, SET_CLOSE, SET_LIGHT
 ?room         | Room number [0...400].
 ?device       | { window, door, light}
@@ -26,7 +26,7 @@ Status : 200 Ok | 400 Bad Request
  
 Field | Value
 ------------ | -------------
-URL example| ~/in-cse/in-name/DigitalTwin?op=GET&room=203&device=window
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=GET&room=203&device=window
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body | (empty)
@@ -58,7 +58,7 @@ Body   :
  
 Field | Value
 ------------ | -------------
-URL example| ~/in-cse/in-name/DigitalTwin?op=SET_CLOSE&room=203&device=window
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_CLOSE&room=203&device=window
 op      | SET_CLOSE, SET_OPEN
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
@@ -92,7 +92,7 @@ Body   :
  
 Field | Value
 ------------ | -------------
-URL example| ~/in-cse/in-name/DigitalTwin?op=SET_LIGHT&room=203&device=light&hex=4286f4&intensity=21.2
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_LIGHT&room=203&device=light&hex=4286f4&intensity=21.2
 op      | SET_CLOSE, SET_OPEN
 ?hex          | HEX code withouth the #
 ?intensity    | Intensity [0...100]
