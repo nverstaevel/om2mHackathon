@@ -16,6 +16,10 @@
 					{
 						"type":"light",
 						"id":"light"
+					},
+					{
+						"type":"movement",
+						"id":"movement"
 					}
 				]
 			}
