@@ -26,7 +26,7 @@ Status : 200 Ok | 400 Bad Request
  
 Field | Value
 ------------ | -------------
-URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=GET&room=203&device=window
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=GET&room=6.203&device=window
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body | (empty)
@@ -47,7 +47,7 @@ Body   :
         "st": 0,
         "cnf": "text/plain:0",
         "cs": 50,
-        "con": "{\"room\":\"203\", \"device\":\"window\", \"state\":\"CLOSE\"}"
+        "con": "{\"room\":\"6.203\", \"device\":\"window\", \"state\":\"CLOSE\"}"
         }
     }
 ```
@@ -80,7 +80,40 @@ Body   :
         "st": 0,
         "cnf": "text/plain:0",
         "cs": 50,
-        "con": "{\"room\":\"203\", \"device\":\"window\", \"state\":\"CLOSE\"}"
+        "con": "{\"room\":\"6.203\", \"device\":\"window\", \"state\":\"CLOSE\"}"
+    }
+}
+```
+*********************
+
+## Change the current state of a Movement sensor 
+* HTTP Request
+ 
+Field | Value
+------------ | -------------
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_ON&room=6.203&device=movement
+op      | SET_ON, SET_OFF
+Method | POST
+Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
+Body | (empty)
+
+* HTTP response
+
+Status : 200 Ok
+Body   :
+```json
+    {
+    "m2m:cin": {
+        "rn": "cin_591265056",
+        "ty": 4,
+        "ri": "/in-cse/cin-591265056",
+        "pi": "/in-cse/cnt-98842656",
+        "ct": "20190418T135929",
+        "lt": "20190418T135929",
+        "st": 0,
+        "cnf": "text/plain:0",
+        "cs": 50,
+        "con": "{\"room\":\"6.203\", \"device\":\"window\", \"state\":\"ON\"}"
     }
 }
 ```
@@ -92,7 +125,7 @@ Body   :
  
 Field | Value
 ------------ | -------------
-URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_LIGHT&room=203&device=light&hex=4286f4&intensity=21.2
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_LIGHT&room=6.203&device=light&hex=4286f4&intensity=21.2
 op      | SET_CLOSE, SET_OPEN
 ?hex          | HEX code withouth the #
 ?intensity    | Intensity [0...100]
