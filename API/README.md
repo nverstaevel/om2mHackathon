@@ -8,7 +8,7 @@ Field | Value
 URL | http://localhost:8080/~/in-cse/in-name/DigitalTwin
 ?op           | GET, SET_OPEN, SET_CLOSE, SET_LIGHT
 ?room         | Room number [0...400].
-?device       | { window, door, light}
+?device       | { window, door, light, movement}
 ?hex          | HEX code withouth the #
 ?intensity    | Intensity [0...100]
 Method        | POST
