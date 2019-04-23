@@ -20,7 +20,7 @@ public class RoomNotExistingException extends Exception {
 	 * @param name The name of the room.
 	 */
 	public RoomNotExistingException(String name) {
-		super("The room {" + name + "} is not existing.");
+		super("The room {" + name + "} does not existing.");
 	}
 
 }

@@ -16,12 +16,20 @@ public class Door extends Device<Boolean> {
 		super(id, room, requestSender);
 		this.setState(false);
 	}
-	
+
 	@Override
 	Boolean stateFromString(String state) {
-		return Boolean.parseBoolean(state);
+		switch (state) {
+		case "SET_OPEN":
+			return true;
+		case "SET_CLOSE":
+			return false;
+		default:
+			throw new IllegalArgumentException("The value {" + state + "} is not valid for a device of type "
+					+ this.getClass().toString() + ". Please refer to the documentation.");
+		}
 	}
-	
+
 	@Override
 	String getStringState() {
 		if (this.getState()) {

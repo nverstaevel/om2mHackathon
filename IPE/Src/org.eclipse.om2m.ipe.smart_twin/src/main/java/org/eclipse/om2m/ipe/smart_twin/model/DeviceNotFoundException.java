@@ -19,7 +19,7 @@ public class DeviceNotFoundException extends Exception {
 	 * @param message The error message.
 	 */
 	public DeviceNotFoundException(String message) {
-		super("The device {" + message + "} is not existing.");
+		super("The device {" + message + "} does not existing.");
 	}
 
 }

@@ -3,7 +3,7 @@
 		"name":"DigitalTwin",
 		"rooms":[
 			{
-				"name":"203",
+				"name":"6.203",
 				"devices":[
 					{
 						"type":"window",
@@ -18,23 +18,12 @@
 						"id":"light"
 					}
 				]
-			},
+			}
+		],
+		"params":[
 			{
-				"name":"204",
-				"devices":[
-					{
-						"type":"window",
-						"id":"window"
-					},
-					{
-						"type":"door",
-						"id":"door"
-					},
-					{
-						"type":"light",
-						"id":"light"
-					}
-				]
+				"id":"TimeOfDay",
+				"type":"TimeOfDay"
 			}
 		]
 	}

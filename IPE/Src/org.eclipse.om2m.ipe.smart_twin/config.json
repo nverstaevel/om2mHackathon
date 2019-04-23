@@ -1,0 +1,24 @@
+{
+	"building":{
+		"name":"DigitalTwin",
+		"rooms":[
+			{
+				"name":"6.203",
+				"devices":[
+					{
+						"type":"window",
+						"id":"window"
+					},
+					{
+						"type":"door",
+						"id":"door"
+					},
+					{
+						"type":"light",
+						"id":"light"
+					}
+				]
+			}
+		]
+	}
+}

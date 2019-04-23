@@ -34,8 +34,43 @@ public class Controller implements InterworkingService {
 						switch (op) {
 						case "GET":
 							return this.monitor.getBuilding().getRoom(room).getDevice(device).getLA();
+						case "SET_LIGHT":
+							String hex = "";
+							String intensity = "";
+							if (request.getQueryStrings().containsKey("intensity")) {
+								intensity = request.getQueryStrings().get("intensity").get(0);
+							}
+							if (request.getQueryStrings().containsKey("hex")) {
+								hex = '#' + request.getQueryStrings().get("hex").get(0);
+							}
+							if (hex.equals("")) {
+								if (!intensity.equals("")) {
+									return this.monitor.getBuilding().getRoom(room).getDevice(device)
+											.newOperation(intensity);
+								}
+							} else {
+								if (!intensity.equals("")) {
+									return this.monitor.getBuilding().getRoom(room).getDevice(device)
+											.newOperation(hex + "-" + intensity);
+								} else {
+									return this.monitor.getBuilding().getRoom(room).getDevice(device).newOperation(hex);
+								}
+							}
+							return this.monitor.getBuilding().getRoom(room).getDevice(device)
+									.newOperation(request.getQueryStrings().get("value").get(0));
 						default:
 							return this.monitor.getBuilding().getRoom(room).getDevice(device).newOperation(op);
+						}
+					}
+				}
+			} else {
+				if (request.getQueryStrings().containsKey("param")) {
+					String param = request.getQueryStrings().get("param").get(0);
+					if (request.getQueryStrings().containsKey("op")) {
+						String op = request.getQueryStrings().get("op").get(0);
+						switch (op) {
+						case "GET":
+							return this.monitor.getParams().getParam(param).getLA();
 						}
 					}
 				}

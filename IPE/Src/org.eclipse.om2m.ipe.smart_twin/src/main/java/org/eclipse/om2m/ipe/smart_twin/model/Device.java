@@ -1,8 +1,15 @@
 package org.eclipse.om2m.ipe.smart_twin.model;
 
+import javax.xml.ws.Response;
+
+import org.eclipse.om2m.commons.constants.Constants;
+import org.eclipse.om2m.commons.constants.MimeMediaType;
+import org.eclipse.om2m.commons.constants.Operation;
+import org.eclipse.om2m.commons.constants.ResourceType;
 import org.eclipse.om2m.commons.constants.ResponseStatusCode;
 import org.eclipse.om2m.commons.resource.Container;
 import org.eclipse.om2m.commons.resource.ContentInstance;
+import org.eclipse.om2m.commons.resource.RequestPrimitive;
 import org.eclipse.om2m.commons.resource.ResponsePrimitive;
 import org.eclipse.om2m.ipe.smart_twin.util.RequestSender;
 
@@ -48,7 +55,7 @@ public abstract class Device<T> {
 	/**
 	 * Set the state of the device to a new state and create a new CIN.
 	 * 
-	 * @param state The new state.
+	 * @param state           The new state.
 	 * @return The result of the creation of the new CIN.
 	 */
 	protected ResponsePrimitive setState(T state) {
@@ -56,6 +63,7 @@ public abstract class Device<T> {
 		ContentInstance contentInstance = new ContentInstance();
 		contentInstance.setContent(this.toString());
 		return requestSender.createContentInstance(this.getCNTPrefix(), contentInstance);
+
 	}
 
 	/**
@@ -136,4 +144,5 @@ public abstract class Device<T> {
 	public String getName() {
 		return name;
 	}
+
 }

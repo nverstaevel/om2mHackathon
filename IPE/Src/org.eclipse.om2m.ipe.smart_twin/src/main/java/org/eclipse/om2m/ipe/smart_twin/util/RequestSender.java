@@ -13,7 +13,7 @@
  *     Samir Medjiah : Technical co-manager
  *     Khalil Drira : Strategy expert
  *     Guillaume Garzone : Developer
- *     FranÃ§ois AÃ¯ssaoui : Developer
+ *     François Aïssaoui : Developer
  *
  * New contributors :
  *******************************************************************************/
