@@ -10,14 +10,14 @@ This is the respository of the om2mHackathon @Wollongong.
 JAVA Runtime Environment (JRE) > 1.8
 ```
 
-### Install on Windows
+### On Windows
 
 ```powershell
 Unzip the file x86_64.zip 
 Launch file start.bat
 ```
 
-### Install on Unix
+### On Unix
 
 ```powershell
 Unzip the file x86_64.zip 
