@@ -21,6 +21,26 @@ Status : 200 Ok | 400 Bad Request
 *********************
 *********************
 
+## Get the current state of all device 
+* HTTP Request
+ 
+Field | Value
+------------ | -------------
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=GET_ALL
+Method | POST
+Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
+Body | (empty)
+
+* HTTP response
+
+Status : 200 Ok
+Body   :
+```json
+    A JSON with all rooms and devices.
+```
+*********************
+
+
 ## Get the current state of a device 
 * HTTP Request
  
