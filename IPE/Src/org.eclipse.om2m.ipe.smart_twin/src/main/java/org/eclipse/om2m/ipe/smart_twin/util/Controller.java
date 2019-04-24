@@ -6,6 +6,11 @@ import org.eclipse.om2m.commons.resource.ResponsePrimitive;
 import org.eclipse.om2m.datamapping.service.DataMapperService;
 import org.eclipse.om2m.interworking.service.InterworkingService;
 import org.eclipse.om2m.ipe.smart_twin.Monitor;
+import org.eclipse.om2m.ipe.smart_twin.model.Device;
+import org.eclipse.om2m.ipe.smart_twin.model.Param;
+import org.eclipse.om2m.ipe.smart_twin.model.Room;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 public class Controller implements InterworkingService {
 
@@ -25,6 +30,13 @@ public class Controller implements InterworkingService {
 		System.out.println(request.toString());
 		ResponsePrimitive response = new ResponsePrimitive(request);
 		try {
+			if (request.getQueryStrings().containsKey("op")) {
+				String op = request.getQueryStrings().get("op").get(0);
+				switch (op) {
+				case "GET_ALL":
+					return this.getAllSensorState();
+				}
+			}
 			if (request.getQueryStrings().containsKey("room")) {
 				String room = request.getQueryStrings().get("room").get(0);
 				if (request.getQueryStrings().containsKey("device")) {
@@ -78,11 +90,51 @@ public class Controller implements InterworkingService {
 			response.setResponseStatusCode(ResponseStatusCode.BAD_REQUEST);
 			response.setContent("At least one parameter is missing. Please refer to the documentation.");
 			return response;
-		} catch (Exception e) {
+		} catch (
+
+		Exception e) {
 			response.setResponseStatusCode(ResponseStatusCode.BAD_REQUEST);
 			response.setContent(e.getMessage());
 			return response;
 		}
+	}
+
+	private ResponsePrimitive getAllSensorState() {
+		ResponsePrimitive response = new ResponsePrimitive();
+		JSONObject mainJson = new JSONObject();
+		JSONObject roomsjson = new JSONObject();
+		try {
+			for (String room : this.monitor.getBuilding().getRooms().keySet()) {
+				Room r = this.monitor.getBuilding().getRoom(room);
+				JSONObject devicesjson = new JSONObject();
+				for (String device : r.getDevices().keySet()) {
+					Device d = r.getDevice(device);
+					JSONParser parser = new JSONParser();
+					JSONObject djson = (JSONObject) parser.parse(d.toString());
+					devicesjson.put(d.getName(), djson);
+				}
+				roomsjson.put(r.getName(), devicesjson);
+			}
+
+			JSONObject paramsJson = new JSONObject();
+			for (String param : this.monitor.getParams().keySet()) {
+				Param p = this.monitor.getParams().getParam(param);
+				JSONParser parser = new JSONParser();
+				JSONObject pjson = (JSONObject) parser.parse(p.toString());
+				paramsJson.put(p.getName(), pjson);
+			}
+			mainJson.put("parameters", paramsJson);
+			mainJson.put("rooms", roomsjson);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+			response.setResponseStatusCode(ResponseStatusCode.INTERNAL_SERVER_ERROR);
+			response.setContent(e.toString());
+			return response;
+		}
+		response.setContent(mainJson.toJSONString());
+		response.setResponseStatusCode(ResponseStatusCode.OK);
+		return response;
 	}
 
 	@Override

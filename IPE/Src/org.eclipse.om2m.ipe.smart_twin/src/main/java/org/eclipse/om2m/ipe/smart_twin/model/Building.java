@@ -57,4 +57,8 @@ public class Building {
 		}
 		return this.rooms.get(name);
 	}
+
+	public HashMap<String,Room> getRooms() {
+		return this.rooms;
+	}
 }

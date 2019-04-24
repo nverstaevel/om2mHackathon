@@ -128,6 +128,7 @@ public class Monitor {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.println("Configuration loaded!");
 	}
 
 	public void start() {

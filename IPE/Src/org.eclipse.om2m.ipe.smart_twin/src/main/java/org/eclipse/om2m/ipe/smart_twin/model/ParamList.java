@@ -1,6 +1,7 @@
 package org.eclipse.om2m.ipe.smart_twin.model;
 
 import java.util.HashMap;
+import java.util.Set;
 
 import org.eclipse.om2m.commons.resource.ResponsePrimitive;
 
@@ -26,6 +27,10 @@ public class ParamList {
 			throw new ParamNotExistingException(name);
 		}
 		return this.paramList.get(name);
+	}
+	
+	public  Set<String> keySet() {
+		return this.paramList.keySet(); 
 	}
 
 }

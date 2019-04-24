@@ -60,4 +60,8 @@ public class Room {
 		return this.building.getAEPrefix() + "/" + this.getName();
 	}
 
+	public Map<String, Device> getDevices() {
+		return this.deviceMap;
+	}
+
 }

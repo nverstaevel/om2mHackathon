@@ -63,7 +63,7 @@ public abstract class Param<T> {
 	}
 	
 	public String toString() {
-		return "{\"param\":\"" + this.getName() + "\", \"value\":\""
+		return "{\"id\":\"" + this.getName() + "\", \"value\":\""
 				+ this.getParam().toString() + "\"}";
 	}
 

@@ -32,9 +32,9 @@ public class Window extends Device<Boolean> {
 	@Override
 	String getStringState() {
 		if (this.getState()) {
-			return "OPEN";
+			return "OPENED";
 		} else {
-			return "CLOSE";
+			return "CLOSED";
 		}
 	}
 
