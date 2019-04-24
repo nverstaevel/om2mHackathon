@@ -5,12 +5,12 @@ import org.eclipse.om2m.ipe.smart_twin.util.RequestSender;
 public class TimeOfDay extends Param<Integer> implements Runnable {
 
 	private Integer wait = 1000;
-	private int mod = 1440;
+	private Integer mod = 1440;
 	private Thread t;
 
-	public TimeOfDay(String name, Building b, RequestSender requestSender) {
-		super(name, b, requestSender);
-		this.setParam(0);
+	public TimeOfDay(String name, String init, Building b, RequestSender requestSender) {
+		super(name, init, b, requestSender);
+		this.newOperation(init);
 		t = new Thread((Runnable) this);
 		t.start();
 	}

@@ -75,10 +75,19 @@ public class Light extends Device<String[]> {
 					+ this.getClass().toString() + ". Please refer to the documentation.");
 		}
 	}
+	
+	@Override
+	public String getType() {
+		return "light";
+	}
 
 	@Override
 	String getStringState() {
 		return this.getState()[0].toString() + "|" + this.getState()[1].toString();
+	}
+	
+	public String getStateJSON() {
+		return "{\"hex\":\""+ this.getState()[0] + "\", \"intensity\":\""+ this.getState()[1] + "\"}";
 	}
 	
 	@Override

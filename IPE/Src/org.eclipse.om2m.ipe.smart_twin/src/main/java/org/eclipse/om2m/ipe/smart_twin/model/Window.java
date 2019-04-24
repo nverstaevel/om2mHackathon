@@ -28,6 +28,11 @@ public class Window extends Device<Boolean> {
 					+ this.getClass().toString() + ". Please refer to the documentation.");
 		}
 	}
+	
+	@Override
+	public String getType() {
+		return "window";
+	}
 
 	@Override
 	String getStringState() {

@@ -4,13 +4,12 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import org.eclipse.om2m.commons.resource.ResponsePrimitive;
 import org.eclipse.om2m.core.service.CseService;
 import org.eclipse.om2m.ipe.smart_twin.model.Building;
 import org.eclipse.om2m.ipe.smart_twin.model.Door;
 import org.eclipse.om2m.ipe.smart_twin.model.Light;
 import org.eclipse.om2m.ipe.smart_twin.model.Movement;
-import org.eclipse.om2m.ipe.smart_twin.model.Param;
+import org.eclipse.om2m.ipe.smart_twin.model.PInteger;
 import org.eclipse.om2m.ipe.smart_twin.model.ParamAlreadyExistingException;
 import org.eclipse.om2m.ipe.smart_twin.model.ParamList;
 import org.eclipse.om2m.ipe.smart_twin.model.Room;
@@ -101,10 +100,14 @@ public class Monitor {
 						if (roomObject instanceof JSONObject) {
 							JSONObject param = (JSONObject) roomObject;
 							String paramId = (String) param.get("id");
+							String paramInit = (String) param.get("init");
 							String paramType = (String) param.get("type");
 							switch (paramType) {
 							case "TimeOfDay":
-								this.param.addParam(new TimeOfDay("TimeOfDay", this.building, this.requestSender));
+								this.param.addParam(new TimeOfDay(paramId,paramInit, this.building, this.requestSender));
+								break;
+							case "PInteger":
+								this.param.addParam(new PInteger(paramId,paramInit, this.building, this.requestSender));
 								break;
 							}
 						}

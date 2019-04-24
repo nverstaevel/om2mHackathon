@@ -9,6 +9,7 @@ import org.eclipse.om2m.ipe.smart_twin.Monitor;
 import org.eclipse.om2m.ipe.smart_twin.model.Device;
 import org.eclipse.om2m.ipe.smart_twin.model.Param;
 import org.eclipse.om2m.ipe.smart_twin.model.Room;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
@@ -83,6 +84,12 @@ public class Controller implements InterworkingService {
 						switch (op) {
 						case "GET":
 							return this.monitor.getParams().getParam(param).getLA();
+						case "SET":
+							if (request.getQueryStrings().containsKey("value")) {
+								String value = request.getQueryStrings().get("value").get(0);
+								return this.monitor.getParams().getParam(param).newOperation(value);
+							}
+							break;
 						}
 					}
 				}
@@ -102,28 +109,25 @@ public class Controller implements InterworkingService {
 	private ResponsePrimitive getAllSensorState() {
 		ResponsePrimitive response = new ResponsePrimitive();
 		JSONObject mainJson = new JSONObject();
-		JSONObject roomsjson = new JSONObject();
+		JSONArray roomsjson = new JSONArray();
 		try {
 			for (String room : this.monitor.getBuilding().getRooms().keySet()) {
 				Room r = this.monitor.getBuilding().getRoom(room);
 				JSONObject devicesjson = new JSONObject();
+				devicesjson.put("id", r.getName());
 				for (String device : r.getDevices().keySet()) {
 					Device d = r.getDevice(device);
 					JSONParser parser = new JSONParser();
-					JSONObject djson = (JSONObject) parser.parse(d.toString());
-					devicesjson.put(d.getName(), djson);
+					JSONObject djson = (JSONObject) parser.parse(d.getStateJSON());
+					devicesjson.put(d.getType(), djson);
 				}
-				roomsjson.put(r.getName(), devicesjson);
+				roomsjson.add(devicesjson);
 			}
-
-			JSONObject paramsJson = new JSONObject();
 			for (String param : this.monitor.getParams().keySet()) {
 				Param p = this.monitor.getParams().getParam(param);
 				JSONParser parser = new JSONParser();
-				JSONObject pjson = (JSONObject) parser.parse(p.toString());
-				paramsJson.put(p.getName(), pjson);
+				mainJson.put(p.getName(), p.toJSONString());
 			}
-			mainJson.put("parameters", paramsJson);
 			mainJson.put("rooms", roomsjson);
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

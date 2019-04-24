@@ -30,6 +30,11 @@ public class Movement extends Device<Boolean> {
 	}
 
 	@Override
+	public String getType() {
+		return "movement";
+	}
+	
+	@Override
 	String getStringState() {
 		if (this.getState()) {
 			return "ON";

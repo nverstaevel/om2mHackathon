@@ -39,4 +39,9 @@ public class Door extends Device<Boolean> {
 		}
 	}
 
+	@Override
+	public String getType() {
+		return "door";
+	}
+
 }

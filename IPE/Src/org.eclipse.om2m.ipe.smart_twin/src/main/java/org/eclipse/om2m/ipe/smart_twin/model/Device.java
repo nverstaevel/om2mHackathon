@@ -135,6 +135,10 @@ public abstract class Device<T> {
 	public T getState() {
 		return this.state;
 	}
+	
+	public String getStateJSON() {
+		return "{\"state\":\""+ this.getStringState() +"\"}";
+	}
 
 	/**
 	 * Get the device name.
@@ -144,5 +148,7 @@ public abstract class Device<T> {
 	public String getName() {
 		return name;
 	}
+
+	public abstract String getType();
 
 }

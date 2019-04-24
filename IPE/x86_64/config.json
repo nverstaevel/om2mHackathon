@@ -2106,7 +2106,13 @@
 		"params":[
 			{
 				"id":"TimeOfDay",
-				"type":"TimeOfDay"
+				"type":"TimeOfDay",
+				"init":"0"
+			},
+			{
+				"id":"Population",
+				"type":"PInteger",
+				"init":"50"
 			}
 		]
 	}

@@ -16,11 +16,12 @@ public abstract class Param<T> {
 
 	private Building building;
 
-	public Param(String name, Building b, RequestSender requestSender) {
+	public Param(String name, String init, Building b, RequestSender requestSender) {
 		this.name = name;
 		this.building = b;
 		this.requestSender = requestSender;
 		this.createCNT();
+		this.newOperation(init);
 	}
 
 	public String getName() {
@@ -35,7 +36,7 @@ public abstract class Param<T> {
 		return this.param;
 	}
 
-	protected ResponsePrimitive setParam(T param) {
+	public ResponsePrimitive setParam(T param) {
 		this.param = param;
 		ContentInstance contentInstance = new ContentInstance();
 		contentInstance.setContent(this.toString());
@@ -65,6 +66,10 @@ public abstract class Param<T> {
 	public String toString() {
 		return "{\"id\":\"" + this.getName() + "\", \"value\":\""
 				+ this.getParam().toString() + "\"}";
+	}
+
+	public String toJSONString() {
+		return this.param.toString();
 	}
 
 }
