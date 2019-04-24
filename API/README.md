@@ -67,7 +67,7 @@ Body   :
         "st": 0,
         "cnf": "text/plain:0",
         "cs": 50,
-        "con": "{\"room\":\"6.203\", \"device\":\"window\", \"state\":\"CLOSE\"}"
+        "con": "{\"room\":\"6.203\", \"device\":\"window\", \"state\":\"CLOSED\"}"
         }
     }
 ```
@@ -134,7 +134,7 @@ Body   :
         "st": 0,
         "cnf": "text/plain:0",
         "cs": 50,
-        "con": "{\"room\":\"6.203\", \"device\":\"window\", \"state\":\"CLOSE\"}"
+        "con": "{\"room\":\"6.203\", \"device\":\"window\", \"state\":\"CLOSED\"}"
     }
 }
 ```
