@@ -8,7 +8,7 @@ This is the respository of the om2mHackathon @Wollongong.
 
 ```powershell
 JAVA Runtime Environment (JRE) > 1.8
-Arduino IDE : https://www.arduino.cc/en/main/software
+Arduino IDE : (https://www.arduino.cc/en/main/software)
 ```
 
 ### On Windows
