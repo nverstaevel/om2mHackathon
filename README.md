@@ -10,8 +10,11 @@ This is the respository of the om2mHackathon @Wollongong.
 
 
 1 - Get and install the Arduino IDE : https://www.arduino.cc/en/main/software
+
 2 - Launch the Arduino IDE
+
 3 - Under File -> Preferences -> Additional Boards Manager URLs, adds http://arduino.esp8266.com/stable/package_esp8266com_index.json and validate.
+
 4 - Select the board: Tools -> Board -> NodeMCU 1.0 (ESP-12E Module)
 
 ### Simulation
