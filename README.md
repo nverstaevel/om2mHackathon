@@ -54,7 +54,7 @@ Some more leds are available on request.
 
 2 - Launch the Arduino IDE
 
-3 - Under File -> Preferences -> Additional Boards Manager URLs, adds http://arduino.esp8266.com/stable/package_esp8266com_index.json and validate.
+3 - Under File -> Preferences -> Additional Boards Manager URLs, add http://arduino.esp8266.com/stable/package_esp8266com_index.json and validate.
 
 4 - Select the board: Tools -> Board -> NodeMCU 1.0 (ESP-12E Module)
 
