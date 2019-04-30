@@ -16,6 +16,8 @@
     * [Stop auto-increment](https://github.com/Eldey/om2mHackathon/tree/master/API#stop-auto-increment)
     * [Change the increment value](https://github.com/Eldey/om2mHackathon/tree/master/API#change-increment)
 *********************
+## Principle
+
 * HTTP Request
 
 Field | Value
