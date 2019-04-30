@@ -1,5 +1,18 @@
 # SMART Digital Twin API Documentation
 
+#Table of Content
+
+* [Get the current state of all device and parameters](https://github.com/Eldey/om2mHackathon/tree/master/API#get-the-current-state-of-all-device)
+* [Get a specific device](https://github.com/Eldey/om2mHackathon/tree/master/API#get-the-current-state-of-a-device)
+* [Get a parameter](https://github.com/Eldey/om2mHackathon/tree/master/API#get-the-current-state-of-a-parameter)
+* [Set a Window or a Door](https://github.com/Eldey/om2mHackathon/tree/master/API#change-the-current-state-of-a-window-or-a-door)
+* [Set a movement sensor](https://github.com/Eldey/om2mHackathon/tree/master/API#change-the-current-state-of-a-movement-sensor)
+* [Set a light](https://github.com/Eldey/om2mHackathon/tree/master/API#change-the-current-state-of-a-light)
+* [Controlling the time](https://github.com/Eldey/om2mHackathon/tree/master/API#controlling-the-time-of-day)
+ * [Set to a specific time](https://github.com/Eldey/om2mHackathon/tree/master/API#controlling-the-time-of-day)
+ * [Start auto-increment] (https://github.com/Eldey/om2mHackathon/tree/master/API#start-auto-increment) 
+ * [Stop auto-increment] (https://github.com/Eldey/om2mHackathon/tree/master/API#stop-auto-increment)
+ * [Change the increment value] (https://github.com/Eldey/om2mHackathon/tree/master/API#change-increment)
 *********************
 * HTTP Request
 
@@ -20,8 +33,8 @@ Body          | (empty)
 Status : 200 Ok | 400 Bad Request
 *********************
 *********************
-
-## Get the current state of all device 
+## GET
+### Get the current state of all device and parameters
 * HTTP Request
  
 Field | Value
@@ -41,7 +54,7 @@ Body   :
 *********************
 
 
-## Get the current state of a device 
+### Get the current state of a device 
 * HTTP Request
  
 Field | Value
@@ -73,7 +86,7 @@ Body   :
 ```
 *********************
 
-## Get the current state of a parameter 
+### Get the current state of a parameter 
 * HTTP Request
  
 Field | Value
@@ -106,8 +119,8 @@ Body   :
 }
 ```
 *********************
-
-## Change the current state of a Window or a Door 
+## SET
+### Change the current state of a Window or a Door 
 * HTTP Request
  
 Field | Value
@@ -140,7 +153,7 @@ Body   :
 ```
 *********************
 
-## Change the current state of a Movement sensor 
+### Change the current state of a Movement sensor 
 * HTTP Request
  
 Field | Value
@@ -174,7 +187,7 @@ Body   :
 *********************
 
 
-## Change the current state of a Light
+### Change the current state of a Light
 * HTTP Request
  
 Field | Value
@@ -210,10 +223,10 @@ Body   :
 
 *********************
 
+## Parameters
+### Controlling the time of Day
 
-## Controlling the time of Day
-
-### Set to a specific time
+#### Set to a specific time
 * HTTP Request
  
 Field | Value
@@ -246,7 +259,7 @@ Body   :
 }
 ```
 
-### Start auto increment 
+#### Start auto increment 
 * HTTP Request
  
 Field | Value
@@ -266,7 +279,7 @@ Body   :
 
 ```
 
-### Stop auto increment 
+#### Stop auto increment 
 * HTTP Request
  
 Field | Value
@@ -285,7 +298,7 @@ Body   :
 
 ```
 
-### Change increment 
+#### Change increment 
 * HTTP Request
  
 Field | Value
