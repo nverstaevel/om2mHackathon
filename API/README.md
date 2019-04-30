@@ -1,6 +1,7 @@
 # SMART Digital Twin API Documentation
 
 # Table of Content
+* [General principle](https://github.com/Eldey/om2mHackathon/tree/master/API#general-principle)
 * [GET](https://github.com/Eldey/om2mHackathon/tree/master/API#get)
   * [Get the current state of all device and parameters](https://github.com/Eldey/om2mHackathon/tree/master/API#get-the-current-state-of-all-device)
   * [Get a specific device](https://github.com/Eldey/om2mHackathon/tree/master/API#get-the-current-state-of-a-device)
@@ -16,7 +17,7 @@
     * [Stop auto-increment](https://github.com/Eldey/om2mHackathon/tree/master/API#stop-auto-increment)
     * [Change the increment value](https://github.com/Eldey/om2mHackathon/tree/master/API#change-increment)
 *********************
-## Principle
+## General Principle
 
 * HTTP Request
 
