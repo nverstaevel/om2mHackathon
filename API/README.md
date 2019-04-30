@@ -37,7 +37,6 @@ Body          | (empty)
 
 Status : 200 Ok | 400 Bad Request
 *********************
-*********************
 ## GET
 ### Get the current state of all device and parameters
 * HTTP Request
@@ -98,7 +97,7 @@ Field | Value
 ------------ | -------------
 URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=GET&param=TimeOfDay
 ?op    | GET
-?param | TimeOfDay
+?param | name of the parameter.
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body | (empty)
