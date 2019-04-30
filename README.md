@@ -65,7 +65,7 @@ JAVA Runtime Environment (JRE) 8 (not compatible with JAVA 11)
 2. Extract the file content of the file x86_64.zip 
 3. Execute the file start.bat
 
-![](https://github.com/Eldey/om2mHackathon/blob/master/img/middleware_laumched.PNG)
+![](https://github.com/Eldey/om2mHackathon/blob/master/img/middleware_launched.PNG)
 
 #### Launching the simulation on Linux
 
