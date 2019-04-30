@@ -22,7 +22,7 @@ This is the respository of the om2mHackathon @Wollongong.
 ####  Requirements
 
 ```powershell
-JAVA Runtime Environment (JRE) > 1.8
+JAVA Runtime Environment (JRE) 8 (not compatible with JAVA 11)
 ```
 
 #### On Windows
