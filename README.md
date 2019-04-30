@@ -135,7 +135,7 @@ The following picture illustrates this architecture:
 
 ## What is simulated:
 
-The simulation simulates a day/night cycle.
+The simulation simulates a day/night cycle and its occupants.
 
 Each of the building rooms are equipped with:
  1. A light.
