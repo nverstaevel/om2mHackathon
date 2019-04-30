@@ -67,9 +67,8 @@ The simulation has two components:
 ### Quick start
 ####  Requirements
 
-```powershell
-JAVA Runtime Environment (JRE) 8 (not compatible with JAVA 11)
-```
+> JAVA Runtime Environment (JRE) 8 (not compatible with JAVA 11)
+
 #### Launching the simulation on Windows
 
 1. Download the middleware: [Download](https://github.com/Eldey/om2mHackathon/blob/master/IPE/x86_64.zip)
