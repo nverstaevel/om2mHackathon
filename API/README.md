@@ -1,6 +1,6 @@
 # SMART Digital Twin API Documentation
 
-#Table of Content
+# Table of Content
 
 * [GET](https://github.com/Eldey/om2mHackathon/tree/master/API#get)
  * [Get the current state of all device and parameters](https://github.com/Eldey/om2mHackathon/tree/master/API#get-the-current-state-of-all-device)
