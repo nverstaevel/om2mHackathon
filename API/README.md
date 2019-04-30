@@ -43,7 +43,7 @@ Body          | (empty)
 * HTTP responses
  Status : 200 Ok | 400 Bad Request
  
-The rest of the document describes all the available operatations. 
+The rest of the document describes all the available operations. 
 *********************
 ## GET
 Those operations allow to get the current state of a device or a parameter. 
