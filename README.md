@@ -36,8 +36,6 @@ This hackathon is supported by funding from ETSI, SMART, and LAAS-CNRS.
 
 Some more leds are available on request.
 
-## Quick start
-
 ### Programming with NodeMCU
 
 
@@ -49,22 +47,27 @@ Some more leds are available on request.
 
 4 - Select the board: Tools -> Board -> NodeMCU 1.0 (ESP-12E Module)
 
-### Simulation
+### Simulation: Digital Twin of the SMART Infrastructure Buidling.
 
-####  Requirements
+The simulation has two components:
+* A middleware based on oneM2M managing the simulation and the sensors
+* A 3D visualisation of the SMART Infrastructure Building 
+
+#### Quick start
+#####  Requirements
 
 ```powershell
 JAVA Runtime Environment (JRE) 8 (not compatible with JAVA 11)
 ```
+##### Launching the simulation on Windows
 
-#### On Windows
+1. Download the middleware: [Download](https://github.com/Eldey/om2mHackathon/blob/master/IPE/x86_64.zip)
+2. Extract the file content of the file x86_64.zip 
+3. Execute the file start.bat
 
-```powershell
-Unzip the file x86_64.zip 
-Launch file start.bat
-```
+![](https://github.com/Eldey/om2mHackathon/blob/master/img/middleware_laumched.PNG)
 
-#### On Unix
+#### Launching the simulation on Linux
 
 ```powershell
 Unzip the file x86_64.zip 
