@@ -77,7 +77,7 @@ The simulation has two components:
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/middleware_launched.PNG)
 
-4. Download the 3D Visualisation for Windows: [Download](https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/Windows_UOW_SMART_Hackathon_V1.3.zip)
+4. Download the 3D Visualisation for Windows: [Download](https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/UOW%20SMART%20Hackathon%20-%20V1.5.zip)
 5. Extract the file Windows_UOW_SMART_Hackathon_V1.3.zip.
 6. Execute the file UOW SMART IoT.exe.
 
@@ -101,7 +101,7 @@ java -jar -ea -Declipse.ignoreApp=true -Dosgi.clean=true -Ddebug=true plugins/or
 
 2. Download, unzip and launch the 3D Visualisatin:
 ```powershell
-wget "https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/Linux_UOW_SMART_Hackathon_V1.3.zip"
+wget "https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/UOW%20SMART%20Hackathon%20-%20Linux%20-%20V1.5.zip"
 mkdir Simulation
 unzip Linux_UOW_SMART_Hackathon_V1.3.zip -d /Simulation
 sudo chmod +x Simulation/UOW\ SMART\ Hackathon\ -\ Linux\ -\ V1.3.x86_64
