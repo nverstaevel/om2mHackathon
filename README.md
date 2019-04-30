@@ -121,7 +121,7 @@ There are two components:
 
 The middleware is the core of the simulation, it manages all the parameters of the simulation and the simulated sensors. Every X seconds, the simulation asks the middleware for the current state of the devices and update itself. At any time, request can be sent to the middleware to get information about a sensor or control the simulation.
 
-The following picture illustrate this architecture:
+The following picture illustrates this architecture:
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/how_it_works.PNG)
 
@@ -143,7 +143,6 @@ Each of the building rooms are equipped with:
  2. An automatic door.
  3. An automatic window.
  4. A movement sensor.
- 
  
  Not all rooms have a door and a window, but all of them have at least a light. 
  
