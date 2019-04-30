@@ -130,7 +130,7 @@ The following picture illustrates this architecture:
 
 | Name        | Description          
 | ------------- |:-------------:| 
-| TimeOfDay     | The current simulation time. It is an integer between [0..1440] corresponding to the number of minutes since midnight  | 
+| TimeOfDay     | The current simulation time. It is an integer between [0..1440] corresponding to the number of minutes since midnight. This parameter is by default automatically controlled by the middleware but the [API](https://github.com/Eldey/om2mHackathon/tree/master/API) gives you opportunity to adjust the time at your convenience.  | 
 | RefreshRate      | The frequency at which the simulation is updating. It is a float point number for seconds.    |  
 | Population      | The number of simulated occupants within the building.    | 
 
