@@ -30,6 +30,10 @@ This hackathon is supported by funding from ETSI, SMART, and LAAS-CNRS.
     * [Requirements](https://github.com/Eldey/om2mHackathon#requirements)
     * [Launching the simulation on Windows](https://github.com/Eldey/om2mHackathon#launching-the-simulation-on-windows)
     * [Launching the simulation on Linux](https://github.com/Eldey/om2mHackathon#launching-the-simulation-on-linux)
+  * [How it works](https://github.com/Eldey/om2mHackathon#how-it-works)
+  * [What are the simulation parameters](https://github.com/Eldey/om2mHackathon#what-are-the-simulation-parameters)
+  * [What is simulated](https://github.com/Eldey/om2mHackathon#what-is-simulated)
+  * [What you can do](https://github.com/Eldey/om2mHackathon#what-you-can-do)
   * [API Documentation](https://github.com/Eldey/om2mHackathon/tree/master/API)
     
 
@@ -109,7 +113,7 @@ sudo chmod +x Simulation/UOW\ SMART\ Hackathon\ -\ Linux\ -\ V1.3.x86_64
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/simulation_window.PNG)
 
-### How it works
+## How it works
 
 There are two components:
 * A 3D visualisation of the SMART Infrastructure building build with Unity3D.
@@ -121,7 +125,7 @@ The following picture illustrate this architecture:
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/how_it_works.PNG)
 
-### What are the simulation parameters:
+## What are the simulation parameters:
 
 
 | Name        | Description          
@@ -130,7 +134,7 @@ The following picture illustrate this architecture:
 | RefreshRate      | The frequency at which the simulation is updating. It is a float point number for seconds.    |  
 | Population      | The number of simulated occupants within the building.    | 
 
-### What is simulated:
+## What is simulated:
 
 The simulation simulates a day/night cycle.
 
@@ -145,7 +149,7 @@ Each of the building rooms are equipped with:
  
  The movement sensors react to events happening in the simulation. 
  
- ### What you can do:
+ ## What you can do:
  
 An [API](https://github.com/Eldey/om2mHackathon/tree/master/API) allows you to control the simulation parameters and the current state of all the simulated sensors for each rooms. 
 
