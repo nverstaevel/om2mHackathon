@@ -15,9 +15,7 @@ EVENT COST: FREE
 
 VENUE: SMART BUILDING 6, FOYER
 
-WEDNESDAY 8 MAY - 9.30AM - 5.00PM 
-
-THURSDSAY 9 MAY - 8.30AM - 5.00PM
+WEDNESDAY 8 MAY - 9.30AM - 5.00PM | THURSDSAY 9 MAY - 8.30AM - 5.00PM
 
 Hosted by the SMART Infrastructure Facility
 
@@ -25,6 +23,17 @@ TO REGISTER VISIT:
 https://bit.ly/2IdpyZ8
 
 This hackathon is supported by funding from ETSI, SMART, and LAAS-CNRS.
+
+# Table of Content
+* [Content of your Kit](https://github.com/Eldey/om2mHackathon#content-of-your-kit)
+* [Programming with NodeMCU](https://github.com/Eldey/om2mHackathon#programming-with-nodemcu)
+* [Simulation: Digital Twin of the SMART Infrastructure Buidling](https://github.com/Eldey/om2mHackathon#simulation-digital-twin-of-the-smart-infrastructure-buidling)
+  * [Quick start](https://github.com/Eldey/om2mHackathon#quick-start)
+    * [Requirements](https://github.com/Eldey/om2mHackathon#requirements)
+    * [Launching the simulation on Windows](https://github.com/Eldey/om2mHackathon#launching-the-simulation-on-windows)
+    * [Launching the simulation on Linux](https://github.com/Eldey/om2mHackathon#launching-the-simulation-on-linux)
+  * [API Documentation](https://github.com/Eldey/om2mHackathon/tree/master/API)
+    
 
 ## Content of your Kit:
 
@@ -36,7 +45,7 @@ This hackathon is supported by funding from ETSI, SMART, and LAAS-CNRS.
 
 Some more leds are available on request.
 
-### Programming with NodeMCU
+## Programming with NodeMCU
 
 
 1 - Get and install the Arduino IDE : https://www.arduino.cc/en/main/software
