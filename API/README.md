@@ -1,23 +1,20 @@
 # SMART Digital Twin API Documentation
 
 # Table of Content
-
- * [GET](https://github.com/Eldey/om2mHackathon/tree/master/API#get)
+* [GET](https://github.com/Eldey/om2mHackathon/tree/master/API#get)
   * [Get the current state of all device and parameters](https://github.com/Eldey/om2mHackathon/tree/master/API#get-the-current-state-of-all-device)
   * [Get a specific device](https://github.com/Eldey/om2mHackathon/tree/master/API#get-the-current-state-of-a-device)
- * [Get a parameter](https://github.com/Eldey/om2mHackathon/tree/master/API#get-the-current-state-of-a-parameter)
+  * [Get a parameter](https://github.com/Eldey/om2mHackathon/tree/master/API#get-the-current-state-of-a-parameter)
 * [SET](https://github.com/Eldey/om2mHackathon/tree/master/API#get)
- * [Set a Window or a Door](https://github.com/Eldey/om2mHackathon/tree/master/API#change-the-current-state-of-a-window-or-a-door)
- 
- 
- 
- * [Set a movement sensor](https://github.com/Eldey/om2mHackathon/tree/master/API#change-the-current-state-of-a-movement-sensor)
- * [Set a light](https://github.com/Eldey/om2mHackathon/tree/master/API#change-the-current-state-of-a-light)
- * [Controlling the time](https://github.com/Eldey/om2mHackathon/tree/master/API#controlling-the-time-of-day)
-  * [Set to a specific time](https://github.com/Eldey/om2mHackathon/tree/master/API#controlling-the-time-of-day)
-  * [Start auto-increment] (https://github.com/Eldey/om2mHackathon/tree/master/API#start-auto-increment) 
-  * [Stop auto-increment] (https://github.com/Eldey/om2mHackathon/tree/master/API#stop-auto-increment)
-  * [Change the increment value] (https://github.com/Eldey/om2mHackathon/tree/master/API#change-increment)
+  * [Set a Window or a Door](https://github.com/Eldey/om2mHackathon/tree/master/API#change-the-current-state-of-a-window-or-a-door) 
+  * [Set a movement sensor](https://github.com/Eldey/om2mHackathon/tree/master/API#change-the-current-state-of-a-movement-sensor)
+  * [Set a light](https://github.com/Eldey/om2mHackathon/tree/master/API#change-the-current-state-of-a-light)
+* [Parameters](https://github.com/Eldey/om2mHackathon/tree/master/API#parameters)
+  * [Controlling the time](https://github.com/Eldey/om2mHackathon/tree/master/API#controlling-the-time-of-day)
+    * [Set to a specific time](https://github.com/Eldey/om2mHackathon/tree/master/API#controlling-the-time-of-day)
+    * [Start autoincrement] (https://github.com/Eldey/om2mHackathon/tree/master/API#start-auto-increment) 
+    * [Stop autoincrement] (https://github.com/Eldey/om2mHackathon/tree/master/API#stop-auto-increment)
+    * [Change the increment value] (https://github.com/Eldey/om2mHackathon/tree/master/API#change-increment)
 *********************
 * HTTP Request
 
