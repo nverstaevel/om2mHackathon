@@ -19,23 +19,31 @@
 *********************
 ## General Principle
 
+In order to control the simulation and its devices, you need to address HTTP requests to the Digital Twin application (AE). A dedicated Interworking Proxy Entity (IPE) has been designed to handle all those requests. The source code of this IPE is available [HERE](https://github.com/Eldey/om2mHackathon/tree/master/IPE/Src/org.eclipse.om2m.ipe.smart_twin).
+
+The model is composed of two different type of entities:
+* A device: It can be a light, a door, a movement sensor or a window
+* A parameter: It models the simulation parameters such as the Time, the number of occupants or the refreshing rate.
+
+In order to interact with the simulation, you need a REST client to send HTTP POST requests to the AE address (by default the address is: http://localhost:8080/~/in-cse/in-name/DigitalTwin).
+
+The generic structure of request is as followed:
+
 * HTTP Request
 
 Field | Value
 ------------ | -------------
-URL | http://localhost:8080/~/in-cse/in-name/DigitalTwin
-?op           | GET, SET_OPEN, SET_CLOSE, SET_LIGHT
-?room         | Room number [0...400].
-?device       | { window, door, light, movement}
-?hex          | HEX code withouth the #
-?intensity    | Intensity [0...100]
+URL | http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=GET[&param1=...]
+?op           | The operation to perform
+?[&param1=...]    | Optional list of parameters (depending of the operation to perform)
 Method        | POST
 Header        | { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body          | (empty)
 
 * HTTP responses
-
-Status : 200 Ok | 400 Bad Request
+ Status : 200 Ok | 400 Bad Request
+ 
+The rest of the document describes all the available operatations. 
 *********************
 ## GET
 ### Get the current state of all device and parameters
