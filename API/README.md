@@ -12,9 +12,9 @@
 * [Parameters](https://github.com/Eldey/om2mHackathon/tree/master/API#parameters)
   * [Controlling the time](https://github.com/Eldey/om2mHackathon/tree/master/API#controlling-the-time-of-day)
     * [Set to a specific time](https://github.com/Eldey/om2mHackathon/tree/master/API#controlling-the-time-of-day)
-    * [Start autoincrement] (https://github.com/Eldey/om2mHackathon/tree/master/API#start-auto-increment) 
-    * [Stop autoincrement] (https://github.com/Eldey/om2mHackathon/tree/master/API#stop-auto-increment)
-    * [Change the increment value] (https://github.com/Eldey/om2mHackathon/tree/master/API#change-increment)
+    * [Start auto-increment](https://github.com/Eldey/om2mHackathon/tree/master/API#start-auto-increment) 
+    * [Stop auto-increment](https://github.com/Eldey/om2mHackathon/tree/master/API#stop-auto-increment)
+    * [Change the increment value](https://github.com/Eldey/om2mHackathon/tree/master/API#change-increment)
 *********************
 * HTTP Request
 
