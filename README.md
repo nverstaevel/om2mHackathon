@@ -54,19 +54,19 @@ Some more leds are available on request.
 
 4 - Select the board: Tools -> Board -> NodeMCU 1.0 (ESP-12E Module)
 
-### Simulation: Digital Twin of the SMART Infrastructure Buidling.
+## Simulation: Digital Twin of the SMART Infrastructure Buidling.
 
 The simulation has two components:
 * A middleware based on oneM2M managing the simulation and the sensors
 * A 3D visualisation of the SMART Infrastructure Building 
 
-#### Quick start
-#####  Requirements
+### Quick start
+####  Requirements
 
 ```powershell
 JAVA Runtime Environment (JRE) 8 (not compatible with JAVA 11)
 ```
-##### Launching the simulation on Windows
+#### Launching the simulation on Windows
 
 1. Download the middleware: [Download](https://github.com/Eldey/om2mHackathon/blob/master/IPE/x86_64.zip)
 2. Extract the file content of the file x86_64.zip 
@@ -85,7 +85,7 @@ JAVA Runtime Environment (JRE) 8 (not compatible with JAVA 11)
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/simulation_window.PNG)
 
-#### Launching the simulation on Linux
+### Launching the simulation on Linux
 
 1. Download, unzip and launch the middleware:
 ```powershell
@@ -108,3 +108,47 @@ sudo chmod +x Simulation/UOW\ SMART\ Hackathon\ -\ Linux\ -\ V1.3.x86_64
 4. Press the Play! button.
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/simulation_window.PNG)
+
+### How it works
+
+There are two components:
+* A 3D visualisation of the SMART Infrastructure building build with Unity3D.
+* A middleware based on [OM2M](https://www.eclipse.org/om2m/)
+
+The middleware is the core of the simulation, it manages all the parameters of the simulation and the simulated sensors. Every X seconds, the simulation asks the middleware for the current state of the devices and update itself. At any time, request can be sent to the middleware to get information about a sensor or control the simulation.
+
+The following picture illustrate this architecture:
+
+![](https://github.com/Eldey/om2mHackathon/blob/master/img/how_it_works.PNG)
+
+### What are the simulation parameters:
+
+
+| Name        | Description          
+| ------------- |:-------------:| 
+| TimeOfDay     | The current simulation time. It is an integer between [0..1440] corresponding to the number of minutes since midnight  | 
+| RefreshRate      | The frequency at which the simulation is updating. It is a float point number for seconds.    |  
+| Population      | The number of simulated occupants within the building.    | 
+
+### What is simulated:
+
+The simulation simulates a day/night cycle.
+
+Each of the building rooms are equipped with:
+ 1. A light.
+ 2. An automatic door.
+ 3. An automatic window.
+ 4. A movement sensor.
+ 
+ 
+ Not all rooms have a door and a window, but all of them have at least a light. 
+ 
+ The movement sensors react to events happening in the simulation. 
+ 
+ ### What you can do:
+ 
+An [API](https://github.com/Eldey/om2mHackathon/tree/master/API) allows you to control the simulation parameters and the current state of all the simulated sensors for each rooms. 
+
+Basically, the [API](https://github.com/Eldey/om2mHackathon/tree/master/API) gives you two types of operations: 
+* GET : to get the current state of a sensor or a parameter.
+* SET : to change the current state of a sensor or a parameter.
