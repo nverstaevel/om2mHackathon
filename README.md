@@ -67,6 +67,17 @@ JAVA Runtime Environment (JRE) 8 (not compatible with JAVA 11)
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/middleware_launched.PNG)
 
+4. Download the 3D Visualisation for Windows [Download](https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/Windows_UOW_SMART_Hackathon_V1.3.zip)
+5. Extract the file Windows_UOW_SMART_Hackathon_V1.3.zip.
+6. Execute the file UOW SMART IoT.exe.
+
+![](https://github.com/Eldey/om2mHackathon/blob/master/img/configuration_screen.PNG)
+
+7. [Optional]: Configure your screen resolution, graphics quality.
+8. Press the Play! button.
+
+![](https://github.com/Eldey/om2mHackathon/blob/master/img/simulation_window.PNG)
+
 #### Launching the simulation on Linux
 
 ```powershell
