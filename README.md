@@ -1,6 +1,30 @@
 # om2mHackathon
 This is the respository of the om2mHackathon @Wollongong.
 
+This hackathon aims to imagine new applications that a smart city
+could offer its citizens, its elected officials or its technical and
+administrative services in a multi-domain vision based on the
+oneM2M standard.
+
+The two day event will involve a day of developers tutorials followed
+by the hackathon. In entering in this hackathon, participants will be
+challenged to come up with innovative ideas, work with others to
+learn new technologies, present your ideas and compete for prizes.
+
+EVENT COST: FREE
+
+VENUE: SMART BUILDING 6, FOYER
+
+WEDNESDAY 8 MAY - 9.30AM - 5.00PM 
+
+THURSDSAY 9 MAY - 8.30AM - 5.00PM
+
+Hosted by the SMART Infrastructure Facility
+
+TO REGISTER VISIT:
+https://bit.ly/2IdpyZ8
+
+This hackathon is supported by funding from ETSI, SMART, and LAAS-CNRS.
 
 ## Content of your Kit:
 
