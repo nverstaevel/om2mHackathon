@@ -9,15 +9,15 @@ by the hackathon. In entering in this hackathon, participants will be
 challenged to come up with innovative ideas, work with others to
 learn new technologies, present your ideas and compete for prizes.
 
-EVENT COST: FREE
+Event Cost: Free
 
-VENUE: SMART BUILDING 6, FOYER
+Venue: SMART building 6, Foyer
 
 WEDNESDAY 8 MAY - 9.30AM - 5.00PM | THURSDSAY 9 MAY - 8.30AM - 5.00PM
 
 Hosted by the SMART Infrastructure Facility
 
-TO REGISTER VISIT:
+To register visit:
 https://bit.ly/2IdpyZ8
 
 This hackathon is supported by funding from ETSI, SMART, and LAAS-CNRS.
