@@ -76,7 +76,7 @@ JAVA Runtime Environment (JRE) 8 (not compatible with JAVA 11)
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/middleware_launched.PNG)
 
-4. Download the 3D Visualisation for Windows [Download](https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/Windows_UOW_SMART_Hackathon_V1.3.zip)
+4. Download the 3D Visualisation for Windows: [Download](https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/Windows_UOW_SMART_Hackathon_V1.3.zip)
 5. Extract the file Windows_UOW_SMART_Hackathon_V1.3.zip.
 6. Execute the file UOW SMART IoT.exe.
 
@@ -89,7 +89,24 @@ JAVA Runtime Environment (JRE) 8 (not compatible with JAVA 11)
 
 #### Launching the simulation on Linux
 
+1. Download, unzip and launch the middleware:
 ```powershell
-Unzip the file x86_64.zip 
-Launch file start.sh
+wget "https://github.com/Eldey/om2mHackathon/blob/master/IPE/x86_64.zip"
+mkdir IPE
+unzip x86_64.zip -d /IPE
+cd IPE/x86_64
+java -jar -ea -Declipse.ignoreApp=true -Dosgi.clean=true -Ddebug=true plugins/org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar -console -noExit
 ```
+
+2. Download, unzip and launch the 3D Visualisatin:
+```powershell
+wget "https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/Linux_UOW_SMART_Hackathon_V1.3.zip"
+mkdir Simulation
+unzip Linux_UOW_SMART_Hackathon_V1.3.zip -d /Simulation
+sudo chmod +x Simulation/UOW\ SMART\ Hackathon\ -\ Linux\ -\ V1.3.x86_64
+./Simulation/UOW\ SMART\ Hackathon\ -\ Linux\ -\ V1.3.x86_64
+```
+3. [Optional]: Configure your screen resolution, graphics quality.
+4. Press the Play! button.
+
+![](https://github.com/Eldey/om2mHackathon/blob/master/img/simulation_window.PNG)
