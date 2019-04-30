@@ -19,7 +19,7 @@
 *********************
 ## General Principle
 
-In order to control the simulation and its devices, you need to address HTTP requests to the Digital Twin application (AE). A dedicated Interworking Proxy Entity (IPE) has been designed to handle all those requests. The source code of this IPE is available [HERE](https://github.com/Eldey/om2mHackathon/tree/master/IPE/Src/org.eclipse.om2m.ipe.smart_twin).
+In order to control the simulation and its devices, you need to address HTTP requests to the Digital Twin application (AE). A dedicated Interworking Proxy Entity (IPE) has been designed to handle all those requests. The source code of this IPE is available [here](https://github.com/Eldey/om2mHackathon/tree/master/IPE/Src/org.eclipse.om2m.ipe.smart_twin).
 
 The model is composed of two different type of entities:
 * A device: It can be a light, a door, a movement sensor or a window
@@ -46,6 +46,8 @@ Body          | (empty)
 The rest of the document describes all the available operatations. 
 *********************
 ## GET
+Those operations allow to get the current state of a device or a parameter. 
+
 ### Get the current state of all device and parameters
 * HTTP Request
  
@@ -61,12 +63,19 @@ Body | (empty)
 Status : 200 Ok
 Body   :
 ```json
-    A JSON with all rooms and devices.
+    A JSON with all rooms, devices and parameters.
 ```
 *********************
 
-
 ### Get the current state of a device 
+
+| Device Type        | States           | 
+| ------------- |:-------------:| 
+| Door     | OPENED/CLOSED | 
+| Window  | OPENED/CLOSED      |   
+| Light | hex: Hex code of the light colour.   intensity: intensity of the light [0..100]      |   
+| Movement sensor | ON/OFF     |   
+
 * HTTP Request
  
 Field | Value
@@ -99,6 +108,13 @@ Body   :
 *********************
 
 ### Get the current state of a parameter 
+
+| Available parameters     |    Description  | 
+| ------------- |:-------------:| 
+| TimeOfDay     | The current time in the simulation [0...1440]. |
+| RefreshRate   | The refresh rate of the simulation.            |
+| Population    | The number of occupants simulated.             |
+
 * HTTP Request
  
 Field | Value
@@ -139,6 +155,8 @@ Field | Value
 ------------ | -------------
 URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_CLOSE&room=203&device=window
 op      | SET_CLOSE, SET_OPEN
+room    | Room number
+device  | Device type 
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body | (empty)
@@ -172,6 +190,8 @@ Field | Value
 ------------ | -------------
 URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_ON&room=6.203&device=movement
 op      | SET_ON, SET_OFF
+room   | Room number
+device | movement
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body | (empty)
@@ -245,7 +265,8 @@ Field | Value
 ------------ | -------------
 URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET&param=TimeOfDay&value=0
 op      | SET
-?param          | Time of the day [0...1440] where 0 is 0:00 and 1440 is 23:59.
+param | TimeOfDay        | 
+value  |Time of the day [0...1440] where 0 is 0:00 and 1440 is 23:59.
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body | (empty)
@@ -278,7 +299,8 @@ Field | Value
 ------------ | -------------
 URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_AUTO&param=TimeOfDay&value=150
 op      | SET_AUTO_ON
-?param | Time in ms between increments
+param | TimeOfDay
+value | Time in ms between increments
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body | (empty)
@@ -298,6 +320,7 @@ Field | Value
 ------------ | -------------
 URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_STOP&param=TimeOfDay
 op      | SET_AUTO_OFF
+param  | TimeOfDay
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body | (empty)
@@ -317,7 +340,8 @@ Field | Value
 ------------ | -------------
 URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_INCR&param=TimeOfDay&value=2
 op      | SET_INCR
-?value   | Integer
+param   | TimeOfDay
+value   | Integer
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body | (empty)
@@ -329,4 +353,3 @@ Body   :
 ```
 
 ```
-
