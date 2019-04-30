@@ -1,6 +1,4 @@
-# om2mHackathon
-This is the respository of the om2mHackathon @Wollongong.
-
+# om2mHackathon@Wollongong
 This hackathon aims to imagine new applications that a smart city
 could offer its citizens, its elected officials or its technical and
 administrative services in a multi-domain vision based on the
