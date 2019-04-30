@@ -2107,13 +2107,22 @@
 			{
 				"id":"TimeOfDay",
 				"type":"TimeOfDay",
-				"init":"0"
+				"init":"360"
 			},
 			{
 				"id":"Population",
 				"type":"PInteger",
 				"init":"50"
+			},
+			{
+				"id":"RefreshRate",
+				"type":"PInteger",
+				"init":"1"
+			},
+			{
+				"id":"DayLength ",
+				"type":"PInteger",
+				"init":"1440"
 			}
-		]
 	}
 }
