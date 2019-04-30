@@ -90,6 +90,24 @@ public class Controller implements InterworkingService {
 								return this.monitor.getParams().getParam(param).newOperation(value);
 							}
 							break;
+						case "SET_AUTO_ON":
+							if (request.getQueryStrings().containsKey("value")) {
+								String value = request.getQueryStrings().get("value").get(0);
+								return this.monitor.getParams().getParam(param).set_auto_on(value);
+							}
+							break;
+						case "SET_AUTO_OFF":
+							if (request.getQueryStrings().containsKey("value")) {
+								String value = request.getQueryStrings().get("value").get(0);
+								return this.monitor.getParams().getParam(param).set_auto_off();
+							}
+							break;
+						case "SET_INCR":
+							if (request.getQueryStrings().containsKey("value")) {
+								String value = request.getQueryStrings().get("value").get(0);
+								return this.monitor.getParams().getParam(param).set_incr(value);
+							}
+							break;
 						}
 					}
 				}

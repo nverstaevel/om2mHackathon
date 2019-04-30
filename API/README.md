@@ -208,3 +208,100 @@ Body   :
 }
 ```
 
+*********************
+
+
+## Controlling the time of Day
+
+### Set to a specific time
+* HTTP Request
+ 
+Field | Value
+------------ | -------------
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET&param=TimeOfDay&value=0
+op      | SET
+?param          | Time of the day [0...1440] where 0 is 0:00 and 1440 is 23:59.
+Method | POST
+Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
+Body | (empty)
+
+* HTTP response
+
+Status : 200 Ok
+Body   :
+```json
+    {
+    "m2m:cin": {
+        "rn": "cin_44510965",
+        "ty": 4,
+        "ri": "/in-cse/cin-44510965",
+        "pi": "/in-cse/cnt-591405752",
+        "ct": "20190418T140145",
+        "lt": "20190418T140145",
+        "st": 0,
+        "cnf": "text/plain:0",
+        "cs": 48,
+        "con": "{\"id\":\"TimeOfDay\", \"value\":\"0\"}"
+    }
+}
+```
+
+### Start auto increment 
+* HTTP Request
+ 
+Field | Value
+------------ | -------------
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_AUTO&param=TimeOfDay&value=150
+op      | SET_AUTO_ON
+?param | Time in ms between increments
+Method | POST
+Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
+Body | (empty)
+
+* HTTP response
+
+Status : 200 Ok
+Body   :
+```
+
+```
+
+### Stop auto increment 
+* HTTP Request
+ 
+Field | Value
+------------ | -------------
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_STOP&param=TimeOfDay
+op      | SET_AUTO_OFF
+Method | POST
+Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
+Body | (empty)
+
+* HTTP response
+
+Status : 200 Ok
+Body   :
+```
+
+```
+
+### Change increment 
+* HTTP Request
+ 
+Field | Value
+------------ | -------------
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_INCR&param=TimeOfDay&value=2
+op      | SET_INCR
+?value   | Integer
+Method | POST
+Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
+Body | (empty)
+
+* HTTP response
+
+Status : 200 Ok
+Body   :
+```
+
+```
+

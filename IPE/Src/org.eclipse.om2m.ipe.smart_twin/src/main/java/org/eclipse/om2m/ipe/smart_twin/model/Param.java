@@ -72,4 +72,10 @@ public abstract class Param<T> {
 		return this.param.toString();
 	}
 
+	public abstract ResponsePrimitive set_auto_on(String value);
+
+	public abstract ResponsePrimitive set_auto_off();
+
+	public abstract ResponsePrimitive set_incr(String value);
+
 }
