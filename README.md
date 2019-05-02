@@ -56,7 +56,9 @@ Some more leds are available on request.
 
 3 - Under File -> Preferences -> Additional Boards Manager URLs, add http://arduino.esp8266.com/stable/package_esp8266com_index.json and validate.
 
-4 - Select the board: Tools -> Board -> NodeMCU 1.0 (ESP-12E Module)
+4 - Add the ESP8266 to Arduino IDE: Tools -> Board -> Boards manager -> search for esp8266 -> install the latest version.
+
+5 - Select the board: Tools -> Board -> NodeMCU 1.0 (ESP-12E Module)
 
 ## Simulation: Digital Twin of the SMART Infrastructure Buidling.
 
