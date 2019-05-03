@@ -112,7 +112,7 @@ java -jar -ea -Declipse.ignoreApp=true -Dosgi.clean=true -Ddebug=true plugins/or
 
 2. Download, unzip and launch the 3D Visualisatin:
 ```powershell
-wget "https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/UOW%20SMART%20Hackathon%20-%20Linux%20-%20V1.5.zip"
+wget "https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/UOW%20SMART%20Hackathon%20-%20Linux%20-%20V1.6.zip"
 mkdir Simulation
 unzip Linux_UOW_SMART_Hackathon_V1.3.zip -d /Simulation
 sudo chmod +x Simulation/UOW\ SMART\ Hackathon\ -\ Linux\ -\ V1.3.x86_64
