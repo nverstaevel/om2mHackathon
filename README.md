@@ -72,17 +72,24 @@ The simulation has two components:
 > JAVA Runtime Environment (JRE) 8 (not compatible with JAVA 11)
 
 > Participants can download Java from this tutorial link: https://java.com/en/download/help/windows_manual_download.xml#download
+
+#### Turn off the Firewall on windows
+
 #### Launching the simulation on Windows
 
 1. Download the middleware: [Download](https://github.com/Eldey/om2mHackathon/blob/master/IPE/x86_64.zip)
 2. Extract the file content of the file x86_64.zip 
-3. Execute the file start.bat
+3. Navigate to x86_64 folder -> configuration -> config.
+4. Go to line 15 -> change IP address with the IP address of your computer.
+5. Execute the file start.bat
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/middleware_launched.PNG)
 
-4. Download the 3D Visualisation for Windows: [Download](https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/UOW%20SMART%20Hackathon%20-%20Windows%20-%20V1.6.zip)
-5. Extract the file Windows_UOW_SMART_Hackathon_V1.6.zip.
-6. Execute the file UOW SMART IoT.exe.
+6. Download the 3D Visualisation for Windows: [Download](https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/UOW%20SMART%20Hackathon%20-%20Windows%20-%20V1.6.zip)
+7. Extract the file Windows_UOW_SMART_Hackathon_V1.6.zip.
+8. Execute the file UOW SMART IoT.exe.
+9. if there is a need to close 3d simulation Window -> press [Alt + F4]
+
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/configuration_screen.PNG)
 
