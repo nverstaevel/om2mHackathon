@@ -87,17 +87,18 @@ The simulation has two components:
 
 6. Download the 3D Visualisation for Windows: [Download](https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/UOW%20SMART%20Hackathon%20-%20Windows%20-%20V1.6.zip)
 7. Extract the file Windows_UOW_SMART_Hackathon_V1.6.zip.
-8. Execute the file UOW SMART IoT.exe.
-9. if there is a need to close 3d simulation Window -> press [Alt + F4]
+8. Execute the file UOW SMART IoT.exe. 
 
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/configuration_screen.PNG)
 
-7. [Optional]: Configure your screen resolution, graphics quality.
-8. Press the Play! button.
+9. [Optional]: Configure your screen resolution, graphics quality.
+10. Press the Play! button.
+
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/simulation_window.PNG)
 
+11. if there is a need to close 3d simulation Window -> press [Alt + F4].
 ### Launching the simulation on Linux
 
 1. Download, unzip and launch the middleware:
