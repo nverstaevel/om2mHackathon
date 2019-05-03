@@ -80,8 +80,8 @@ The simulation has two components:
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/middleware_launched.PNG)
 
-4. Download the 3D Visualisation for Windows: [Download](https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/UOW%20SMART%20Hackathon%20-%20V1.5.zip)
-5. Extract the file Windows_UOW_SMART_Hackathon_V1.3.zip.
+4. Download the 3D Visualisation for Windows: [Download](https://github.com/Eldey/om2mHackathon/blob/master/Digital%20Twin/UOW%20SMART%20Hackathon%20-%20Windows%20-%20V1.6.zip)
+5. Extract the file Windows_UOW_SMART_Hackathon_V1.6.zip.
 6. Execute the file UOW SMART IoT.exe.
 
 ![](https://github.com/Eldey/om2mHackathon/blob/master/img/configuration_screen.PNG)
