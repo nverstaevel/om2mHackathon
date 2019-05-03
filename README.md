@@ -70,6 +70,7 @@ The simulation has two components:
 ####  Requirements
 
 > JAVA Runtime Environment (JRE) 8 (not compatible with JAVA 11)
+
 > Participants can download Java from this tutorial link: https://java.com/en/download/help/windows_manual_download.xml#download
 #### Launching the simulation on Windows
 
