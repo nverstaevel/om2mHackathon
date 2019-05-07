@@ -114,7 +114,7 @@ Body   :
         "st": 0,
         "cnf": "text/plain:0",
         "cs": 35,
-        "con": "{\"param\":\"TimeOfDay\", \"value\":\"13\"}"
+        "con": "{\"id\":\"TimeOfDay\", \"value\":\"13\", \"ms\":\"1000\"}"
     }
 }
 ```
