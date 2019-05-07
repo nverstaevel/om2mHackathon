@@ -10,7 +10,7 @@
   * [Set a light](https://github.com/Eldey/om2mHackathon/tree/master/API#change-the-current-state-of-a-light)
 * [Parameters](https://github.com/Eldey/om2mHackathon/tree/master/API#parameters)
   * [Controlling the time](https://github.com/Eldey/om2mHackathon/tree/master/API#controlling-the-time-of-day)
-    * [Set to a specific time](https://github.com/Eldey/om2mHackathon/tree/master/API#controlling-the-time-of-day)
+  * [Controlling the population](https://github.com/Eldey/om2mHackathon/tree/master/API#controlling-the-population)
 *********************
 ## General Principle
 
@@ -161,13 +161,13 @@ Body   :
 
 ### Change the current state of a Light
 * HTTP Request
+
+hex          | HEX code withouth of the colour
+intensity    | Intensity [0...100]
  
 Field | Value
 ------------ | -------------
-URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_LIGHT&room=6.203&device=light&hex=4286f4&intensity=21.2
-op      | SET_CLOSE, SET_OPEN
-?hex          | HEX code withouth the #
-?intensity    | Intensity [0...100]
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin/6.203/light
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body :
@@ -206,7 +206,6 @@ Body   :
 ## Parameters
 ### Controlling the time of Day
 
-#### Set to a specific time and a specific speed
 * HTTP Request
 
 value is [0...1440] where 0 is 0:00 and 1440 is 23:59.
@@ -251,7 +250,6 @@ Body   :
 
 ### Controlling the Population
 
-#### Set to a specific population
 * HTTP Request
 
 value is [0...99] corresponding the number of occupants withing the building.
