@@ -19,13 +19,13 @@
 *********************
 ## General Principle
 
-In order to control the simulation and its devices, you need to address HTTP requests to the Digital Twin application (AE). A dedicated Interworking Proxy Entity (IPE) has been designed to handle all those requests. The source code of this IPE is available [here](https://github.com/Eldey/om2mHackathon/tree/master/IPE/Src/org.eclipse.om2m.ipe.smart_twin).
+In order to control the simulation and its devices, you need to address Post a Content Instance into the Container associated to a device. A dedicated Interworking Proxy Entity (IPE) has been designed to handle all new content instance. The source code of this IPE is available [here](https://github.com/Eldey/om2mHackathon/tree/master/IPE/Src/org.eclipse.om2m.ipe.smart_twin).
 
 The model is composed of two different type of entities:
 * A device: It can be a light, a door, a movement sensor or a window
 * A parameter: It models the simulation parameters such as the Time, the number of occupants or the refreshing rate.
 
-In order to interact with the simulation, you need a REST client to send HTTP POST requests to the AE address (by default the address is: http://localhost:8080/~/in-cse/in-name/DigitalTwin).
+In order to interact with the simulation, you need a REST client to send HTTP POST requests.
 
 The generic structure of request is as followed:
 
@@ -33,9 +33,7 @@ The generic structure of request is as followed:
 
 Field | Value
 ------------ | -------------
-URL | http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=GET[&param1=...]
-?op           | The operation to perform
-?[&param1=...]    | Optional list of parameters (depending of the operation to perform)
+URL | http://localhost:8080/~/in-cse/in-name/DigitalTwin/Room/device
 Method        | POST
 Header        | { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body          | (empty)
@@ -47,25 +45,6 @@ The rest of the document describes all the available operations.
 *********************
 ## GET
 Those operations allow to get the current state of a device or a parameter. 
-
-### Get the current state of all device and parameters
-* HTTP Request
- 
-Field | Value
------------- | -------------
-URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=GET_ALL
-Method | POST
-Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
-Body | (empty)
-
-* HTTP response
-
-Status : 200 Ok
-Body   :
-```json
-    A JSON with all rooms, devices and parameters.
-```
-*********************
 
 ### Get the current state of a device 
 
@@ -80,7 +59,7 @@ Body   :
  
 Field | Value
 ------------ | -------------
-URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=GET&room=6.203&device=window
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin/6.203/window/la
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body | (empty)
@@ -119,9 +98,7 @@ Body   :
  
 Field | Value
 ------------ | -------------
-URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=GET&param=TimeOfDay
-?op    | GET
-?param | name of the parameter.
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin/TimeOfDay
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
 Body | (empty)
@@ -153,13 +130,21 @@ Body   :
  
 Field | Value
 ------------ | -------------
-URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_CLOSE&room=203&device=window
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin/6.203/window
 op      | SET_CLOSE, SET_OPEN
 room    | Room number
 device  | Device type 
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
-Body | (empty)
+Body : 
+```json
+{
+   "m2m:cin": {
+        "cnf": "application/json",
+        "con": "{\"room\":\"6.203\", \"device\":\"door\", \"state\":\"CLOSED\"}"
+   }
+}
+``
 
 * HTTP response
 
@@ -168,16 +153,16 @@ Body   :
 ```json
     {
     "m2m:cin": {
-        "rn": "cin_591265056",
+        "rn": "cin_605497129",
         "ty": 4,
-        "ri": "/in-cse/cin-591265056",
-        "pi": "/in-cse/cnt-98842656",
-        "ct": "20190418T135929",
-        "lt": "20190418T135929",
+        "ri": "/in-cse/cin-605497129",
+        "pi": "/in-cse/cnt-611739193",
+        "ct": "20190507T224825",
+        "lt": "20190507T224825",
         "st": 0,
-        "cnf": "text/plain:0",
-        "cs": 50,
-        "con": "{\"room\":\"6.203\", \"device\":\"window\", \"state\":\"CLOSED\"}"
+        "cnf": "application/json",
+        "cs": 51,
+        "con": "{\"room\":\"6.203\", \"device\":\"door\", \"state\":\"CLOSED\"}"
     }
 }
 ```
