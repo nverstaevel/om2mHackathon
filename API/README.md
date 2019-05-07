@@ -130,13 +130,10 @@ Body   :
  
 Field | Value
 ------------ | -------------
-URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin/6.203/window
-op      | SET_CLOSE, SET_OPEN
-room    | Room number
-device  | Device type 
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin/6.203/door
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
-Body : 
+Body |
 ```json
 {
    "m2m:cin": {
@@ -144,7 +141,7 @@ Body :
         "con": "{\"room\":\"6.203\", \"device\":\"door\", \"state\":\"CLOSED\"}"
    }
 }
-``
+```
 
 * HTTP response
 
@@ -166,43 +163,6 @@ Body   :
     }
 }
 ```
-*********************
-
-### Change the current state of a Movement sensor 
-* HTTP Request
- 
-Field | Value
------------- | -------------
-URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_ON&room=6.203&device=movement
-op      | SET_ON, SET_OFF
-room   | Room number
-device | movement
-Method | POST
-Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
-Body | (empty)
-
-* HTTP response
-
-Status : 200 Ok
-Body   :
-```json
-    {
-    "m2m:cin": {
-        "rn": "cin_591265056",
-        "ty": 4,
-        "ri": "/in-cse/cin-591265056",
-        "pi": "/in-cse/cnt-98842656",
-        "ct": "20190418T135929",
-        "lt": "20190418T135929",
-        "st": 0,
-        "cnf": "text/plain:0",
-        "cs": 50,
-        "con": "{\"room\":\"6.203\", \"device\":\"window\", \"state\":\"ON\"}"
-    }
-}
-```
-*********************
-
 
 ### Change the current state of a Light
 * HTTP Request
@@ -215,7 +175,14 @@ op      | SET_CLOSE, SET_OPEN
 ?intensity    | Intensity [0...100]
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
-Body | (empty)
+Body | ```json
+ {
+   "m2m:cin": {
+        "cnf": "application/json",
+        "con": "{\"room\":\"6.203\", \"device\":\"light\", \"hex\":\"#4286f4\", \"intensity\":\"50.5\"}"
+   }
+}
+```
 
 * HTTP response
 
@@ -224,16 +191,16 @@ Body   :
 ```json
     {
     "m2m:cin": {
-        "rn": "cin_44510965",
+        "rn": "cin_548717777",
         "ty": 4,
-        "ri": "/in-cse/cin-44510965",
-        "pi": "/in-cse/cnt-591405752",
-        "ct": "20190418T140145",
-        "lt": "20190418T140145",
+        "ri": "/in-cse/cin-548717777",
+        "pi": "/in-cse/cnt-463936908",
+        "ct": "20190507T225254",
+        "lt": "20190507T225254",
         "st": 0,
-        "cnf": "text/plain:0",
-        "cs": 48,
-        "con": "{\"room\":\"6.203\", \"device\":\"light\", \"hex\":\"#4286f4\", \"intensity\":\"21.2\"}"
+        "cnf": "application/json",
+        "cs": 71,
+        "con": "{\"room\":\"6.203\", \"device\":\"light\", \"hex\":\"#4286f4\", \"intensity\":\"50.5\"}"
     }
 }
 ```
@@ -243,18 +210,26 @@ Body   :
 ## Parameters
 ### Controlling the time of Day
 
-#### Set to a specific time
+#### Set to a specific time and a specific speed
 * HTTP Request
- 
+
+value is [0...1440] where 0 is 0:00 and 1440 is 23:59.
+ms is the number of milliseconds corresponding to 1 minute.
+
 Field | Value
 ------------ | -------------
-URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET&param=TimeOfDay&value=0
-op      | SET
-param | TimeOfDay        | 
-value  |Time of the day [0...1440] where 0 is 0:00 and 1440 is 23:59.
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin/TimeOfDay
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
-Body | (empty)
+Body | 
+```json
+ {
+   "m2m:cin": {
+        "cnf": "application/json",
+        "con": "{\"id\":\"TimeOfDay\", \"value\":\"350\", \"ms\":\"100\"}"
+   }
+}
+```
 
 * HTTP response
 
@@ -263,78 +238,16 @@ Body   :
 ```json
     {
     "m2m:cin": {
-        "rn": "cin_44510965",
+        "rn": "cin_693503782",
         "ty": 4,
-        "ri": "/in-cse/cin-44510965",
-        "pi": "/in-cse/cnt-591405752",
-        "ct": "20190418T140145",
-        "lt": "20190418T140145",
+        "ri": "/in-cse/cin-693503782",
+        "pi": "/in-cse/cnt-198962612",
+        "ct": "20190507T225534",
+        "lt": "20190507T225534",
         "st": 0,
-        "cnf": "text/plain:0",
-        "cs": 48,
-        "con": "{\"id\":\"TimeOfDay\", \"value\":\"0\"}"
+        "cnf": "application/json",
+        "cs": 45,
+        "con": "{\"id\":\"TimeOfDay\", \"value\":\"350\", \"ms\":\"100\"}"
     }
 }
-```
-
-#### Start auto increment 
-* HTTP Request
- 
-Field | Value
------------- | -------------
-URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_AUTO&param=TimeOfDay&value=150
-op      | SET_AUTO_ON
-param | TimeOfDay
-value | Time in ms between increments
-Method | POST
-Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
-Body | (empty)
-
-* HTTP response
-
-Status : 200 Ok
-Body   :
-```
-
-```
-
-#### Stop auto increment 
-* HTTP Request
- 
-Field | Value
------------- | -------------
-URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_STOP&param=TimeOfDay
-op      | SET_AUTO_OFF
-param  | TimeOfDay
-Method | POST
-Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
-Body | (empty)
-
-* HTTP response
-
-Status : 200 Ok
-Body   :
-```
-
-```
-
-#### Change increment 
-* HTTP Request
- 
-Field | Value
------------- | -------------
-URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin?op=SET_INCR&param=TimeOfDay&value=2
-op      | SET_INCR
-param   | TimeOfDay
-value   | Integer
-Method | POST
-Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
-Body | (empty)
-
-* HTTP response
-
-Status : 200 Ok
-Body   :
-```
-
 ```
