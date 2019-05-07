@@ -3,19 +3,14 @@
 # Table of Content
 * [General principle](https://github.com/Eldey/om2mHackathon/tree/master/API#general-principle)
 * [GET](https://github.com/Eldey/om2mHackathon/tree/master/API#get)
-  * [Get the current state of all device and parameters](https://github.com/Eldey/om2mHackathon/tree/master/API#get-the-current-state-of-all-device)
   * [Get a specific device](https://github.com/Eldey/om2mHackathon/tree/master/API#get-the-current-state-of-a-device)
   * [Get a parameter](https://github.com/Eldey/om2mHackathon/tree/master/API#get-the-current-state-of-a-parameter)
 * [SET](https://github.com/Eldey/om2mHackathon/tree/master/API#get)
   * [Set a Window or a Door](https://github.com/Eldey/om2mHackathon/tree/master/API#change-the-current-state-of-a-window-or-a-door) 
-  * [Set a movement sensor](https://github.com/Eldey/om2mHackathon/tree/master/API#change-the-current-state-of-a-movement-sensor)
   * [Set a light](https://github.com/Eldey/om2mHackathon/tree/master/API#change-the-current-state-of-a-light)
 * [Parameters](https://github.com/Eldey/om2mHackathon/tree/master/API#parameters)
   * [Controlling the time](https://github.com/Eldey/om2mHackathon/tree/master/API#controlling-the-time-of-day)
     * [Set to a specific time](https://github.com/Eldey/om2mHackathon/tree/master/API#controlling-the-time-of-day)
-    * [Start auto-increment](https://github.com/Eldey/om2mHackathon/tree/master/API#start-auto-increment) 
-    * [Stop auto-increment](https://github.com/Eldey/om2mHackathon/tree/master/API#stop-auto-increment)
-    * [Change the increment value](https://github.com/Eldey/om2mHackathon/tree/master/API#change-increment)
 *********************
 ## General Principle
 
@@ -133,7 +128,7 @@ Field | Value
 URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin/6.203/door
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
-Body |
+Body :
 ```json
 {
    "m2m:cin": {
@@ -175,7 +170,8 @@ op      | SET_CLOSE, SET_OPEN
 ?intensity    | Intensity [0...100]
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
-Body | ```json
+Body :
+```json
  {
    "m2m:cin": {
         "cnf": "application/json",
@@ -221,7 +217,7 @@ Field | Value
 URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin/TimeOfDay
 Method | POST
 Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
-Body | 
+Body :  
 ```json
  {
    "m2m:cin": {
@@ -248,6 +244,50 @@ Body   :
         "cnf": "application/json",
         "cs": 45,
         "con": "{\"id\":\"TimeOfDay\", \"value\":\"350\", \"ms\":\"100\"}"
+    }
+}
+```
+
+
+### Controlling the Population
+
+#### Set to a specific population
+* HTTP Request
+
+value is [0...99] corresponding the number of occupants withing the building.
+
+Field | Value
+------------ | -------------
+URL example| http://localhost:8080/~/in-cse/in-name/DigitalTwin/Population
+Method | POST
+Header |  { "X-M2M-Origin": "admin:admin",  "Accept": "application/json"} 
+Body :  
+```json
+ {
+   "m2m:cin": {
+        "cnf": "application/json",
+        "con": "{\"id\":\"TimeOfDay\", \"value\":\"350\", \"ms\":\"100\"}"
+   }
+}
+```
+
+* HTTP response
+
+Status : 200 Ok
+Body   :
+```json
+    {
+    "m2m:cin": {
+        "rn": "cin_693503782",
+        "ty": 4,
+        "ri": "/in-cse/cin-693503782",
+        "pi": "/in-cse/cnt-198962612",
+        "ct": "20190507T225534",
+        "lt": "20190507T225534",
+        "st": 0,
+        "cnf": "application/json",
+        "cs": 45,
+        "con": "{\"id\":\"Population\", \"value\":\"50\"}"
     }
 }
 ```
