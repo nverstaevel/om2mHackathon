@@ -289,3 +289,78 @@ Body   :
     }
 }
 ```
+
+### Python example
+```python
+import requests
+import json
+import random
+import time
+
+def create_content_instance(url, login, con, label=[]):
+    body = {
+        "m2m:cin": {
+            "cnf": "application/json",
+            "lbl": label,
+            "con": con
+        }
+    }
+
+    header = {
+        'X-M2M-Origin': login,
+        'Content-Type': 'application/json;ty=4'
+    }
+
+    r = requests.post(url, data=json.dumps(body), headers=header)
+    return r.status_code, r.text, r
+
+def randomRoom():
+    floor = random.randint(0, 3)
+    r = random.randint(0, 15) - 1
+    return floor * 100 + r
+
+AE = "http://localhost:8080/~/in-cse/in-name/DigitalTwin/"
+login = "admin:admin"
+
+while(True):
+    time.sleep(5)
+    room = "6."+ str(randomRoom())
+    CNT = AE + str(room) + "/light"
+    print(CNT)
+    color = "%06x" % random.randint(0, 0xFFFFFF)
+    intensity = random.randint(0,101)-1
+    con={
+        "room":str(room),
+        "device":"light",
+        "hex": str(color),
+        "intensity":str(intensity)
+    }
+    print(create_content_instance(CNT,login,json.dumps(con)))
+
+    CNT = AE + str(room) + "/door"
+    if (random.randint(0, 1) is 0):
+        state = "OPENED"
+    else:
+        state = "CLOSED"
+    con = {
+        "room": str(room),
+        "device": "door",
+        "state": str(state),
+        "intensity": str(intensity)
+    }
+    print(create_content_instance(CNT, login, json.dumps(con)))
+
+    CNT = AE + str(room) + "/window"
+    if (random.randint(0, 1) is 0):
+        state = "OPENED"
+    else:
+        state = "CLOSED"
+    con = {
+        "room": str(room),
+        "device": "window",
+        "state": str(state),
+        "intensity": str(intensity)
+    }
+    print(create_content_instance(CNT, login, json.dumps(con)))
+```
+
